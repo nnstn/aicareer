@@ -1,0 +1,6 @@
+命令行链接数据库
+mysql -uroot -p123456  -h127.0.0.1 -P3306
+
+create database office default character set utf8;
+
+grant all privileges on office.*  to office identified by 'office';

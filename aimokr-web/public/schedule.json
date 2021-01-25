@@ -1,0 +1,83 @@
+{
+    "flag": true,
+    "message": "成功",
+    "data": {
+        "total": 10,
+        "items": [
+            {
+                "id": 3,
+                "dispatcher": "wangjn_bj@112.com",
+                "tasker": "wangjn_bj@112.com",
+                "taskName": "日程功能代码设计1",
+                "taskType": "important",
+                "noticeType": "不通知",
+                "topping": true,
+                "startDate": "2020-05-29",
+                "endDate": "2020-06-27",
+                "state": 3,
+                "createTime": "2020-06-24",
+                "lastUpdateTime": "2020-06-24",
+                "opeationIp": "0:0:0:0:0:0:0:1"
+            } ,
+            {
+                "id": 3,
+                "dispatcher": "wangjn_bj@112.com",
+                "tasker": "wangjn_bj@112.com",
+                "taskName": "日程功能代码设计2",
+                "taskType": "important",
+                "noticeType": "不通知",
+                "topping": true,
+                "startDate": "2020-05-24",
+                "endDate": "2020-06-27",
+                "state": 3,
+                "createTime": "2020-06-24",
+                "lastUpdateTime": "2020-06-24",
+                "opeationIp": "0:0:0:0:0:0:0:1"
+            } ,            {
+                "id": 3,
+                "dispatcher": "wangjn_bj@112.com",
+                "tasker": "wangjn_bj@112.com",
+                "taskName": "日程功能代码设计3",
+                "taskType": "important",
+                "noticeType": "不通知",
+                "topping": true,
+                "startDate": "2020-06-24",
+                "endDate": "2020-07-11",
+                "state": 3,
+                "createTime": "2020-06-24",
+                "lastUpdateTime": "2020-06-24",
+                "opeationIp": "0:0:0:0:0:0:0:1"
+            } ,
+            {
+                "id": 3,
+                "dispatcher": "wangjn_bj@112.com",
+                "tasker": "wangjn_bj@112.com",
+                "taskName": "日程功能代码设计4",
+                "taskType": "important",
+                "noticeType": "不通知",
+                "topping": true,
+                "startDate": "2020-06-24",
+                "endDate": "2020-06-27",
+                "state": 3,
+                "createTime": "2020-06-24",
+                "lastUpdateTime": "2020-06-24",
+                "opeationIp": "0:0:0:0:0:0:0:1"
+            } ,
+            {
+                "id": 3,
+                "dispatcher": "wangjn_bj@112.com",
+                "tasker": "wangjn_bj@112.com",
+                "taskName": "日程功能代码设计5",
+                "taskType": "important",
+                "noticeType": "不通知",
+                "topping": true,
+                "startDate": "2020-06-24",
+                "endDate": "2020-06-27",
+                "state": 3,
+                "createTime": "2020-06-24",
+                "lastUpdateTime": "2020-06-24",
+                "opeationIp": "0:0:0:0:0:0:0:1"
+            }
+        ]
+    }
+}

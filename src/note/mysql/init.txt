@@ -1,0 +1,58 @@
+
+DROP TABLE IF EXISTS `user`;
+create table `user` (
+  `id` bigint(20) not null auto_increment comment '用户ID',
+  `leader` bigint(20) not null comment '直属领导',
+  `user_code` varchar(50) not null unique comment '用户编码',
+  `user_name` varchar(50) not null comment '用户名称',
+  `password`  varchar(50) not null comment '用户密码',
+  `email`     varchar(50) not null comment '用户邮箱',
+  `phone`     varchar(50) not null comment '用户电话',
+  `salt`     varchar(50) not null comment  '盐',
+  `create_time` datetime default null comment '创建时间',
+  `last_update_time` datetime default null comment '最后更新时间',
+  `opeation_ip`     varchar(50) not null comment '创建用户IP',
+  primary key (`id`)
+) engine=innodb auto_increment=1 default charset=utf8;
+
+DROP TABLE IF EXISTS `task`;
+create table `task` (
+  `id` bigint(20) not null auto_increment comment '任务ID',
+  `dispatcher` varchar(50) not null  comment   '派发任务用户ID',
+  `tasker`     varchar(50)  not null comment   '执行任务用户ID',
+  `task_name`  varchar(50) not null  comment    '任务名称',
+  `start_date` datetime not null comment '开始日期',
+  `end_date`   datetime not null comment '结束日期',
+  `task_type`   int(2) not null  comment '任务类型 1:开发编码 2:会议讨论 3:设计相关 4:文档编写 5:bug处处理 6:环境部署 ',
+  `notice_type` int(2) not null comment '通知类型 1 不提醒 2 邮件提醒 3 易信提醒',
+  `topping` tinyint(1) not null comment '是否置顶',
+  `state` int(2)  comment '任务状态 1:新增 2 处理中 3 完成',
+
+  `create_time` datetime default null comment '创建时间',
+  `last_update_time` datetime default null comment '最后更新时间',
+  `opeation_ip`     varchar(50) not null comment '创建用户IP',
+  primary key (`id`)
+) engine=innodb auto_increment=1 default charset=utf8;
+
+DROP TABLE IF EXISTS `product` comment '产品信息表';
+create table `product` (
+  `id` bigint(20) not null auto_increment comment '产品ID',
+  `product_name`  varchar(200) not null  comment    '任务名称',
+  `product_url`   varchar(200)  comment '产品地址',
+  `create_time` datetime default null comment '创建时间',
+  `last_update_time` datetime default null comment '最后更新时间',
+  `opeation_ip`     varchar(50) not null comment '创建用户IP',
+  primary key (`id`)
+) engine=innodb auto_increment=1 default charset=utf8;
+
+DROP TABLE IF EXISTS `product_gain` comment '产品交付表';
+create table `product_gain` (
+  `id` bigint(20) not null auto_increment comment '交付ID',
+  `productid` bigint(20) not null    comment '产品ID',
+  `gain_name`  varchar(50) not null  comment    '任务名称',
+  `gain_url`   varchar(200)  comment '产品地址',
+  `create_time` datetime default null comment '创建时间',
+  `last_update_time` datetime default null comment '最后更新时间',
+  `opeation_ip`     varchar(50) not null comment '创建用户IP',
+  primary key (`id`)
+) engine=innodb auto_increment=1 default charset=utf8;

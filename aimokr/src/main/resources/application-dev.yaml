@@ -1,0 +1,46 @@
+aicareer:
+  aimokr:
+    mysql:
+     url: localhost:3306
+     username: office
+     password: office
+#     password: ENC(ZDmMiOphZxP1u04rRdQ5WUR+FXDOndWR)
+# 连接四大参数 serverTimezone=UTC会比中国早8个小时
+spring:
+  application:
+    name: aicareer
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://${aicareer.aimokr.mysql.url}/office?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    username: ${aicareer.aimokr.mysql.username}
+    password: ${aicareer.aimokr.mysql.password}
+druid:
+  loginPassword: 123456
+  loginUsername: admin
+
+#mybatis配置
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+pagehelper:
+  helper-dialect: mysql
+
+logging:
+  level:
+    com.sitech.aicareer.mapper: debug
+
+# jasypt 密码加密配置
+jasypt:
+  encryptor:
+    # 加密盐值   建议放到外部 或-Djasypt.encryptor.password=sitechaicp
+    password: office
+    # 加密算法设置 3.0.0 以后
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
+picture:
+  retention: true
+#模型算法平台能力目录redis是否加载
+modelAlgorithm:
+  redis: true

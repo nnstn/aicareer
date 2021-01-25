@@ -1,0 +1,8 @@
+1.mybatis mysql布尔类型处理 数据库数据类型使用tinyint(1)
+2.controller接收json请求参数时,注意请求报文key中是否多了空格，导致接收不到参数。
+3.pojo 对应属性 不能使用int这种简单属性 要使用
+4.mybatis pojo对象没有@Id 自动生成SQL 会添加许多and条件
+5.controller返回前台数据:注意相关转换器的冲突问题
+    Long会丢失精度 需要转换为String：  https://www.cnblogs.com/bigorang/p/12202152.html 使用第二种
+    日期格式化进行转换：https://blog.csdn.net/tianhouquan/article/details/91040087
+6.批量更新语句：https://blog.csdn.net/deAdmin/article/details/96127008

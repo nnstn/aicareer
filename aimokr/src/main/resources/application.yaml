@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: dev
+# 服务端口
+server:
+  port: 8090
+  servlet:
+    context-path: /
