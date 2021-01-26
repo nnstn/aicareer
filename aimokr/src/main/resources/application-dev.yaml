@@ -11,7 +11,7 @@ spring:
     name: aicareer
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://${aicareer.aimokr.mysql.url}/office?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://${aicareer.aimokr.mysql.url}/office?serverTimezone=UTC&useUnicode=true&useSSL=false&characterEncoding=utf-8
     username: ${aicareer.aimokr.mysql.username}
     password: ${aicareer.aimokr.mysql.password}
 druid:

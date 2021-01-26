@@ -24,6 +24,6 @@ public class Task {
 
     private Date createTime;
     private Date lastUpdateTime;
-    private String opeationIp;
+    private String operateIp;
 
 }

@@ -60,7 +60,7 @@ public class TaskService {
 
         task.setCreateTime(new Date());
         task.setLastUpdateTime(new Date());
-        task.setOpeationIp(request.getRemoteAddr());
+        task.setOperateIp(request.getRemoteAddr());
         return taskMapper.insert(task);
     }
 

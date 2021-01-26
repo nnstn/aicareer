@@ -35,7 +35,7 @@ public class AuthController {
         log.info("remoteHost:"+remoteHost);
         log.info("remoteAddr:"+remoteAddr);
 
-        user.setOpeationIp(remoteAddr);
+        user.setOperateIp(remoteAddr);
 
 
         authService.registerUser(user);
