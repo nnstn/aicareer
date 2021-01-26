@@ -2,25 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6967bfa2-bef2-4b45-8f67-1e14ea3406c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/bean/query/ProductGainPageQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/bean/query/ProductPageQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/mapper/ProductGainMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/mapper/ProductMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/ProductGain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/service/ProductGainService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aimokr/src/test/java/com/sitech/aicareer/mapper/BaseApplicationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aimokr/src/test/java/com/sitech/aicareer/mapper/ProductGainMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aimokr/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/note/mind/脑图开发.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aimokr/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/aimokr/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/service/TaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aimokr/src/main/resources/application-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/aimokr/src/main/resources/application-dev.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/note/mysql/init.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/note/mysql/init.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aimokr-web/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/aimokr-web/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aimokr/aimokr.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,38 +24,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aimokr/src/main/resources/application-dev.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2560">
-              <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aimokr/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aimokr/src/test/java/com/sitech/aicareer/mapper/ProductGainMapperTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
+            <state relative-caret-position="418">
               <caret line="24" column="22" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -80,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aimokr/src/test/java/com/sitech/aicareer/mapper/BaseApplicationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="374">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,7 +47,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/mapper/ProductMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="154">
@@ -99,9 +57,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aimokr-web/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/note/mind/脑图开发.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aimokr/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/service/ProductGainService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
+            <state relative-caret-position="946">
               <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -113,11 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/service/ProductService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="462">
               <caret line="38" column="58" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
-              <folding>
-                <element signature="e#1293#1302#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -198,6 +180,9 @@
         <option value="$PROJECT_DIR$/aimokr/src/test/java/com/sitech/aicareer/mapper/BaseApplicationTest.java" />
         <option value="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/mapper/ProductMapper.java" />
         <option value="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/service/ProductService.java" />
+        <option value="$PROJECT_DIR$/src/note/mind/脑图开放" />
+        <option value="$PROJECT_DIR$/aimokr/.gitignore" />
+        <option value="$PROJECT_DIR$/aimokr-web/.gitignore" />
       </list>
     </option>
   </component>
@@ -223,21 +208,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="aicareer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="aicareer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="迭代明细" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
@@ -284,105 +255,25 @@
             <path>
               <item name="aicareer" type="b2602c69:ProjectViewProjectNode" />
               <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="aimokr" type="462c0819:PsiDirectoryNode" />
+              <item name="aimokr-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aicareer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aicareer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aicareer" type="b2602c69:ProjectViewProjectNode" />
               <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="aimokr" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="note" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aicareer" type="b2602c69:ProjectViewProjectNode" />
               <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="aimokr" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aicareer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="aimokr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aicareer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="aimokr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aicareer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="aimokr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="query" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aicareer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="aimokr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aicareer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="aimokr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aicareer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="aimokr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aicareer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="aimokr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aicareer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="aimokr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aicareer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="aimokr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="note" type="462c0819:PsiDirectoryNode" />
+              <item name="mind" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -402,7 +293,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/aimokr-web/src/components/page/product" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/aimokr" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -415,21 +306,21 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.sitech.aicareer.mapper" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.sitech.aicareer.service" />
       <recent name="com.sitech.aicareer.mapper" />
       <recent name="com.sitech.aicareer.bean.query" />
       <recent name="com.sitech.aicareer.pojo" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\gitlab\aicareer\aimokr" />
       <recent name="D:\gitlab\aicareer\aimokr-web\src\components\page\product" />
       <recent name="D:\gitlab\aicareer\src\note" />
       <recent name="D:\gitlab\aicareer\aimokr\src\main\resources" />
       <recent name="D:\gitlab\aicareer\aimokr\src\main\java\com\sitech\aicareer" />
-      <recent name="D:\gitlab\aicareer\aimokr\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -515,6 +406,7 @@
       <workItem from="1611560225014" duration="225000" />
       <workItem from="1611560472863" duration="2347000" />
       <workItem from="1611621543046" duration="7354000" />
+      <workItem from="1611672382266" duration="2153000" />
     </task>
     <servers />
   </component>
@@ -545,12 +437,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23952000" />
+    <option name="totallyTimeSpent" value="26105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20362474" />
+      <window_info id="npm" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20575693" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -566,13 +459,13 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286334" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32936078" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="14" visible="true" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.25" />
@@ -617,27 +510,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/web/handler/GlobalExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.0.RELEASE/spring-boot-2.1.0.RELEASE-sources.jar!/org/springframework/boot/web/reactive/error/DefaultErrorAttributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="78" column="56" selection-start-line="78" selection-start-column="56" selection-end-line="78" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/web/handler/GlobalCorsConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/aimokr-web/src/App.vue">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -654,27 +526,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.1.10/druid-1.1.10-sources.jar!/com/alibaba/druid/pool/DruidDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="2467" column="33" selection-start-line="2467" selection-start-column="33" selection-end-line="2467" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.9.7/jackson-core-2.9.7-sources.jar!/com/fasterxml/jackson/core/JsonParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="1803" selection-start-line="1803" selection-end-line="1803" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.2.RELEASE/spring-web-5.1.2.RELEASE-sources.jar!/org/springframework/http/converter/json/AbstractJackson2HttpMessageConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="238" column="37" selection-start-line="238" selection-start-column="37" selection-end-line="238" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.1.10/druid-1.1.10-sources.jar!/com/alibaba/druid/pool/DruidDataSource.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.9.7/jackson-core-2.9.7-sources.jar!/com/fasterxml/jackson/core/JsonParser.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.2.RELEASE/spring-web-5.1.2.RELEASE-sources.jar!/org/springframework/http/converter/json/AbstractJackson2HttpMessageConverter.java" />
     <entry file="file://$PROJECT_DIR$/aimokr-web/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -766,9 +620,6 @@
     <entry file="file://$PROJECT_DIR$/aimokr-web/public/Schedule.vue">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/aimokr-web/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -821,20 +672,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12-sources.jar!/javax/servlet/http/HttpServletRequestWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.2.RELEASE/spring-test-5.1.2.RELEASE-sources.jar!/org/springframework/mock/web/MockHttpServletRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4510">
-          <caret line="283" column="11" selection-start-line="283" selection-start-column="11" selection-end-line="283" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12-sources.jar!/javax/servlet/http/HttpServletRequestWrapper.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.2.RELEASE/spring-test-5.1.2.RELEASE-sources.jar!/org/springframework/mock/web/MockHttpServletRequest.java" />
     <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/ProductGain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -849,13 +688,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/builder/annotation/ProviderSqlSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/builder/annotation/ProviderSqlSource.java" />
     <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/service/TaskService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -879,21 +712,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aimokr/src/main/resources/application-dev.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
+        <state relative-caret-position="660">
           <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2560">
+        <state relative-caret-position="946">
           <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/aimokr/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1320">
           <caret line="60" selection-start-line="60" selection-end-line="60" />
@@ -902,7 +733,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aimokr/src/test/java/com/sitech/aicareer/mapper/ProductGainMapperTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
+        <state relative-caret-position="418">
           <caret line="24" column="22" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -912,11 +743,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aimokr/src/test/java/com/sitech/aicareer/mapper/BaseApplicationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="374">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/service/ProductGainService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="38" column="58" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -934,30 +782,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/service/ProductGainService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/service/ProductService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="38" column="58" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
-          <folding>
-            <element signature="e#1293#1302#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/mapper/ProductMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="16" column="19" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/note/mind/脑图开放">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aimokr/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aimokr-web/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/note/mind/脑图开发.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
         </state>
       </provider>
     </entry>
