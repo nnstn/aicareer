@@ -8,6 +8,8 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@antv/g6": "^4.1.4",
+    "@hellowuxin/mindmap": "^2.1.4",
     "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
     "element-ui": "^2.11.0",

@@ -73,6 +73,14 @@ export default {
                         {
                             index: 'taskList',
                             title: '任务列表'
+                        },
+                        {
+                            index: 'G6Demo',
+                            title: 'G6Demo'
+                        },
+                        {
+                            index: 'mindmap',
+                            title: 'mindmap'
                         }
                     ]
                 },
