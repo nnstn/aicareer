@@ -2,13 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6967bfa2-bef2-4b45-8f67-1e14ea3406c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/aimokr-web/src/components/g6/G6demo.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aimokr-web/src/components/g6/mindmap.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/Article.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/Attachment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chrome-extension/background.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chrome-extension/chrome-extension.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chrome-extension/img/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chrome-extension/js/content-script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chrome-extension/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chrome-extension/js/myscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chrome-extension/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chrome-extension/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chrome-extension/popup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/note/chrome扩展/扩展说明.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aimokr-web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/aimokr-web/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aimokr-web/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/aimokr-web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/aimokr-web/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aimokr-web/src/components/common/Sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/aimokr-web/src/components/common/Sidebar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aimokr-web/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/aimokr-web/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/note/mysql/init.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/note/mysql/init.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,73 +35,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chrome-extension/popup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/note/mysql/createdatabase.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/note/mysql/init.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="60" selection-start-line="60" selection-end-line="83" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/Product.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/Article.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/aimokr-web/src/components/g6/G6demo.vue">
+        <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/Attachment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1430">
-              <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+            <state relative-caret-position="110">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aimokr-web/src/components/g6/mindmap.vue">
+        <entry file="file://$PROJECT_DIR$/chrome-extension/js/myscript.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chrome-extension/js/content-script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+            <state relative-caret-position="220">
+              <caret line="25" column="52" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="52" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aimokr-web/node_modules/@hellowuxin/mindmap/package.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aimokr-web/node_modules/@hellowuxin/mindmap/dist/demo.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aimokr-web/node_modules/@hellowuxin/mindmap/dist/mindmap.common.js">
+        <entry file="file://$PROJECT_DIR$/chrome-extension/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1848" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aimokr-web/node_modules/@hellowuxin/mindmap/dist/mindmap.umd.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-66" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aimokr-web/node_modules/@hellowuxin/mindmap/dist/mindmap.common.js.map">
-          <provider editor-type-id="sourcemapFileViewerProvider" />
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/OfficeStarter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aimokr-web/src/components/page/Icon.vue">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aimokr-web/src/components/page/product/ProductInfo.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4884">
-              <caret line="224" column="44" selection-start-line="224" selection-start-column="44" selection-end-line="224" selection-end-column="44" />
+            <state relative-caret-position="382">
+              <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -112,6 +131,7 @@
       <find>DefaultErrorAttributes</find>
       <find>10.161.251.61</find>
       <find>task</find>
+      <find>show-image-co</find>
     </findStrings>
     <replaceStrings>
       <replace>com.sitech.aicareer</replace>
@@ -129,7 +149,6 @@
         <option value="$PROJECT_DIR$/src/note/mysql/createdatabase.txt" />
         <option value="$PROJECT_DIR$/src/note/office.sql" />
         <option value="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/aimokr-web/package.json" />
         <option value="$PROJECT_DIR$/aimokr/src/main/resources/banner.txt" />
         <option value="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/web/component/MyErrorAttributes.java" />
         <option value="$PROJECT_DIR$/aimokr/src/main/resources/application.yaml" />
@@ -137,7 +156,6 @@
         <option value="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/Product.java" />
         <option value="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/Task.java" />
         <option value="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/User.java" />
-        <option value="$PROJECT_DIR$/src/note/mysql/init.txt" />
         <option value="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/controller/AuthController.java" />
         <option value="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/service/TaskService.java" />
         <option value="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/bean/query/ProductGainPageQuery.java" />
@@ -160,6 +178,15 @@
         <option value="$PROJECT_DIR$/aimokr-web/src/router/index.js" />
         <option value="$PROJECT_DIR$/aimokr-web/src/components/g6/mindmap.vue" />
         <option value="$PROJECT_DIR$/aimokr-web/src/components/g6/G6demo.vue" />
+        <option value="$PROJECT_DIR$/aimokr-web/package.json" />
+        <option value="$PROJECT_DIR$/src/note/chrome扩展/扩展说明.txt" />
+        <option value="$PROJECT_DIR$/chrome-extension/js/myscript.js" />
+        <option value="$PROJECT_DIR$/chrome-extension/popup.html" />
+        <option value="$PROJECT_DIR$/chrome-extension/manifest.json" />
+        <option value="$PROJECT_DIR$/chrome-extension/js/content-script.js" />
+        <option value="$PROJECT_DIR$/src/note/mysql/init.txt" />
+        <option value="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/Article.java" />
+        <option value="$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/Attachment.java" />
       </list>
     </option>
   </component>
@@ -211,71 +238,53 @@
             <path>
               <item name="aicareer" type="b2602c69:ProjectViewProjectNode" />
               <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="aimokr-web" type="462c0819:PsiDirectoryNode" />
+              <item name="aimokr" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aicareer" type="b2602c69:ProjectViewProjectNode" />
               <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="aimokr-web" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aicareer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="aimokr-web" type="462c0819:PsiDirectoryNode" />
+              <item name="aimokr" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aicareer" type="b2602c69:ProjectViewProjectNode" />
               <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="aimokr-web" type="462c0819:PsiDirectoryNode" />
+              <item name="aimokr" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aicareer" type="b2602c69:ProjectViewProjectNode" />
               <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="aimokr-web" type="462c0819:PsiDirectoryNode" />
+              <item name="aimokr" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aicareer" type="b2602c69:ProjectViewProjectNode" />
               <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="aimokr-web" type="462c0819:PsiDirectoryNode" />
+              <item name="aimokr" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="g6" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="aicareer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aicareer" type="b2602c69:ProjectViewProjectNode" />
               <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="aimokr-web" type="462c0819:PsiDirectoryNode" />
+              <item name="aimokr" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aicareer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="aimokr-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-              <item name="schedule" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aicareer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aicareer" type="462c0819:PsiDirectoryNode" />
-              <item name="aimokr-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -292,7 +301,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -306,7 +314,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/aimokr-web/src/components/g6" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/chrome-extension" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -323,17 +331,17 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sitech.aicareer.pojo" />
       <recent name="com.sitech.aicareer.service" />
       <recent name="com.sitech.aicareer.mapper" />
       <recent name="com.sitech.aicareer.bean.query" />
-      <recent name="com.sitech.aicareer.pojo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\aicareer\chrome-extension" />
+      <recent name="D:\github\aicareer" />
       <recent name="D:\github\aicareer\aimokr-web\src\components\g6" />
       <recent name="D:\gitlab\aicareer\aimokr" />
       <recent name="D:\gitlab\aicareer\aimokr-web\src\components\page\product" />
-      <recent name="D:\gitlab\aicareer\src\note" />
-      <recent name="D:\gitlab\aicareer\aimokr\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -421,8 +429,17 @@
       <workItem from="1611621543046" duration="7354000" />
       <workItem from="1611672382266" duration="2153000" />
       <workItem from="1611717197551" duration="6932000" />
-      <workItem from="1611800596543" duration="7335000" />
+      <workItem from="1611800596543" duration="8211000" />
+      <workItem from="1611886777463" duration="11831000" />
     </task>
+    <task id="LOCAL-00001" summary="前端测试">
+      <created>1611823945557</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611823945557</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -452,13 +469,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40372000" />
+    <option name="totallyTimeSpent" value="53079000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21002132" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21215352" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -475,13 +491,13 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.44468546" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.20607375" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32936078" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3286334" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.25" />
@@ -497,6 +513,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="前端测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="前端测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -526,121 +546,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/aimokr-web/public/Schedule.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/note/mysql/createdatabase.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="43" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/controller/AuthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/bean/query/UserPageQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="11" selection-start-line="11" selection-end-line="18" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/bean/query/ProductGainPageQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="12" selection-start-line="12" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12-sources.jar!/javax/servlet/http/HttpServletRequestWrapper.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.2.RELEASE/spring-test-5.1.2.RELEASE-sources.jar!/org/springframework/mock/web/MockHttpServletRequest.java" />
-    <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/ProductGain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/note/mysql/init.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="47" column="34" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/builder/annotation/ProviderSqlSource.java" />
-    <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/service/TaskService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/mapper/TaskMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/mapper/ProductGainMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aimokr/src/main/resources/application-dev.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
-          <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aimokr/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/note/mind/脑图开放" />
     <entry file="file://$PROJECT_DIR$/aimokr/src/test/java/com/sitech/aicareer/mapper/ProductGainMapperTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -675,13 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aimokr/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/service/ProductGainService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
@@ -713,13 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/note/mind/脑图开发.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/aimokr-web/vue.config.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -728,13 +619,6 @@
         <state split_layout="SPLIT">
           <first_editor />
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aimokr-web/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
@@ -754,9 +638,6 @@
           <caret line="445" column="8" selection-start-line="445" selection-start-column="8" selection-end-line="445" selection-end-column="20" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aimokr-web/node_modules/@hellowuxin/mindmap/dist/mindmap.umd.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/aimokr-web/src/App.vue">
       <provider selected="true" editor-type-id="text-editor" />
@@ -795,34 +676,184 @@
     <entry file="file://$PROJECT_DIR$/aimokr-web/node_modules/@hellowuxin/mindmap/dist/demo.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/aimokr-web/node_modules/@hellowuxin/mindmap/dist/mindmap.common.js.map">
-      <provider editor-type-id="sourcemapFileViewerProvider" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aimokr-web/node_modules/@hellowuxin/mindmap/dist/mindmap.common.js">
+    <entry file="file://$PROJECT_DIR$/aimokr-web/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1848" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aimokr-web/node_modules/@hellowuxin/mindmap/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aimokr-web/node_modules/@hellowuxin/mindmap/dist/mindmap.umd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aimokr-web/src/components/g6/mindmap.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        <state relative-caret-position="1166">
+          <caret line="128" column="20" lean-forward="true" selection-start-line="128" selection-start-column="20" selection-end-line="128" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/aimokr-web/src/components/g6/G6demo.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1430">
+        <state relative-caret-position="286">
           <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aimokr/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aimokr-web/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aimokr-web/src/components/g6/mindmap.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aimokr-web/node_modules/@hellowuxin/mindmap/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aimokr-web/node_modules/@hellowuxin/mindmap/dist/mindmap.common.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aimokr-web/node_modules/@hellowuxin/mindmap/dist/mindmap.umd.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aimokr-web/node_modules/@hellowuxin/mindmap/dist/mindmap.common.js.map">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aimokr-web/node_modules/@hellowuxin/mindmap/dist/mindmap.umd.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/note/mind/脑图开发.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/note/chrome扩展/扩展说明.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chrome-extension/background.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chrome-extension/chrome-extension.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chrome-extension/main.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chrome-extension/img/icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chrome-extension/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aimokr/src/main/resources/banner.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aimokr/src/main/resources/application-dev.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aimokr/src/main/resources/application.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/note/mysql/createdatabase.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chrome-extension/js/myscript.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chrome-extension/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chrome-extension/js/show-image-content-size.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chrome-extension/popup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chrome-extension/js/content-script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="25" column="52" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/note/mysql/init.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="60" selection-start-line="60" selection-end-line="83" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/Article.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aimokr/src/main/java/com/sitech/aicareer/pojo/Attachment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>

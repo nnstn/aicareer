@@ -56,3 +56,29 @@ create table `product_gain` (
   `operate_ip`     varchar(50) not null comment '创建用户IP',
   primary key (`id`)
 ) engine=innodb auto_increment=1 default charset=utf8 comment '产品交付表';
+
+
+DROP TABLE IF EXISTS `article` ;
+create table `article` (
+  `article_id` bigint(20) not null auto_increment comment '帖子ID',
+  `author`  varchar(50) not null  comment    '帖子作者',
+  `article_url`   varchar(200)  comment '帖子地址',
+  `publish_date` datetime default null comment '发帖日期',
+  `update_date` datetime default null comment '最后更新日期',
+  `create_time` datetime default null comment '采集时间',
+  `last_update_time` datetime default null comment '最后更新时间',
+  `operate_ip`     varchar(50) not null comment '采集用户IP',
+  primary key (`article_id`)
+) engine=innodb auto_increment=1 default charset=utf8 comment '帖子交付列表';
+
+DROP TABLE IF EXISTS `attachment` ;
+create table `attachment` (
+  `attach_id` bigint(20) not null auto_increment comment '附件ID',
+  `article_id` bigint(20) not null auto_increment comment '帖子ID',
+  `attach_name`  varchar(200)   comment '附件名称',
+  `attach_url`   varchar(200)  comment '附件地址',
+  `create_time` datetime default null comment '采集时间',
+  `last_update_time` datetime default null comment '最后更新时间',
+  `operate_ip`     varchar(50) not null comment '采集用户IP',
+  primary key (`attach_id`)
+) engine=innodb auto_increment=1 default charset=utf8 comment '帖子附件列表';

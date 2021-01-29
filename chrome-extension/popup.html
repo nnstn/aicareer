@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+<meta charset="utf-8">
+<title>sitech-aicp</title>
+<link rel="stylesheet" href="main.css" type="text/css" media="screen" />
+<script src="./js/jquery.js"></script>
+</head>
+<body>
+
+<div id="login"  >
+
+<form class="form-inline">
+
+<div style="margin-top:10px">
+    <select id="tmpserver" name="tmpserver">
+        <option value="default.go2https.com">default</option>
+        <option value="s3.go2https.com">S3</option>
+        <option value="s1.go2https.com">S1</option>
+        <option value="sg01.go2https.com">SG01</option>
+
+    </select>
+    <form>
+    </form>
+    <br />
+    <br />
+   <button type="button" class="btn   on btn-primary" id="connectbtn" ><i class="icon-play"></i>连接 connect</button>
+    <button type="button" class="btn   on" id="disconnectbtn" ><i class="icon-stop"></i>断开 disconnect</button>
+	<button type="button" class="btn   on" id="schdulebtn" ><i class="icon-stop"></i>提交工作记录</button>
+  </form>
+</div>
+<script src="./js/myscript.js"></script>
+
+</body>
+</html>
