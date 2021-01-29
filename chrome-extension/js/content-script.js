@@ -1,4 +1,4 @@
-$("h2.art-tt").append("<button id='collectbtn' style='background-color:yellow;border: none'>采集</button>");
+$("h2.art-tt").after("<button id='collectbtn' style='background-color:yellow;border: none'>采集</button>");
 
 if( $("#collectbtn").length ){
 
@@ -10,12 +10,12 @@ if( $("#collectbtn").length ){
         var url = window.location.href;
         var article_id = url.substring(url.lastIndexOf("/")+1)
         let param = {
-            "article_id":article_id,
-            "title":title,
+            "articleId":article_id,
             "author":author,
-            "publist_date":publist_date,
-            "update_date":update_date,
-            "url":url,
+            "articleTitle":title,
+            "articleUrl":url,
+            "publishDate":publist_date,
+            "updateDate":update_date,
             "attachment":[]
         };
         if($(".art-affix1>.down").size()>0){
@@ -23,16 +23,30 @@ if( $("#collectbtn").length ){
                 let name = $(".art-affix1>.down").eq(i).text();
                 let value = $(".art-affix1>.down").eq(i).attr("href");
                 var attach_id = value.substring(value.lastIndexOf("/")+1)
-                param["attachment"].push({"attach_id":attach_id,"name":name,"value":value});
+                param["attachment"].push({"attachName":name,"attachUrl":value});
             }
         }
-        alert(param)
+        // {
+        //     "articleId":1121,
+        //     "author":"wangjn_bj",
+        //     "articleUrl":"11",
+        //     "publishDate":"2021-01-29 15:20",
+        //     "updateDate":"2021-01-29 15:20",
+        //     "attachment":[
+        //         {
+        //             "attachId":1121,
+        //             "attachName":"attachName",
+        //             "attachUrl":"13123"
+        //         }
+        //     ]
+        // }
         $.ajax({
             type : 'POST',
-            url : "http://localhost:8090/aimokr/aritcle/",
+            url : "http://localhost:8090/extension/collect",
             async : false,
-            data:param,
+            data:JSON.stringify(param),
             dataType : 'json',
+            contentType: "application/json",
             traditional:true,
             timeout:120000,
             success : function(result,status,resp) {
