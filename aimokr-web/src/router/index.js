@@ -30,6 +30,16 @@ export default new Router({
                     meta: { title: '任务列表' }
                 },
                 {
+                    path: '/G6Demo',
+                    component: () => import(/* webpackChunkName: "dashboard" */ '../components/g6/G6demo.vue'),
+                    meta: { title: 'G6Demo' }
+                },
+                {
+                    path: '/mindmap',
+                    component: () => import(/* webpackChunkName: "dashboard" */ '../components/g6/mindmap.vue'),
+                    meta: { title: 'mindmap' }
+                },
+                {
                     path: '/icon',
                     component: () => import(/* webpackChunkName: "icon" */ '../components/page/Icon.vue'),
                     meta: { title: '自定义图标' }
