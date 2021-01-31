@@ -6,10 +6,12 @@ import com.sitech.aicareer.bean.PageQuery;
 import com.sitech.aicareer.bean.PageResult;
 import com.sitech.aicareer.mapper.UserMapper;
 import com.sitech.aicareer.pojo.User;
+import com.sitech.aicareer.web.handler.RequestHolder;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 import java.util.List;
 
@@ -33,8 +35,10 @@ public class UserService {
         return new PageResult<User>(info.getTotal(), Tasks);
     }
     public int insertUser(User user){
+        HttpServletRequest request = RequestHolder.getCurrentRequest();
         user.setCreateTime(new Date());
         user.setLastUpdateTime(new Date());
+        user.setOperateIp(request.getRemoteAddr());
         return userMapper.insert(user);
     }
 

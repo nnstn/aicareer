@@ -1,12 +1,9 @@
 package com.sitech.aicareer.mapper;
 
 import com.sitech.aicareer.bean.query.ProductPageQuery;
-import com.sitech.aicareer.bean.query.TaskPageQuery;
 import com.sitech.aicareer.pojo.Product;
-import com.sitech.aicareer.pojo.Task;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.ibatis.annotations.SelectProvider;
-import org.apache.ibatis.annotations.UpdateProvider;
 import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;

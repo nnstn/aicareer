@@ -40,6 +40,16 @@ export default new Router({
                     meta: { title: 'mindmap' }
                 },
                 {
+                    path: '/ArticlePage',
+                    component: () => import(/* webpackChunkName: "dashboard" */ '../components/page/article/ArticlePage.vue'),
+                    meta: { title: 'article' }
+                },
+                {
+                    path: '/attachment',
+                    component: () => import(/* webpackChunkName: "dashboard" */ '../components/page/article/attachment.vue'),
+                    meta: { title: 'attachment' }
+                },
+                {
                     path: '/icon',
                     component: () => import(/* webpackChunkName: "icon" */ '../components/page/Icon.vue'),
                     meta: { title: '自定义图标' }

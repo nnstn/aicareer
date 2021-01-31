@@ -6,7 +6,6 @@ import com.sitech.aicareer.pojo.User;
 import com.sitech.aicareer.web.handler.JsonMapper;
 import com.sitech.aicareer.web.handler.RequestHolder;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;

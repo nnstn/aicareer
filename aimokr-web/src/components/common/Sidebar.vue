@@ -75,6 +75,14 @@ export default {
                             title: '任务列表'
                         },
                         {
+                            index: 'ArticlePage',
+                            title: '帖子列表'
+                        },
+                        {
+                            index: 'attachment',
+                            title: '附件列表'
+                        },
+                        {
                             index: 'G6Demo',
                             title: 'G6Demo'
                         },
