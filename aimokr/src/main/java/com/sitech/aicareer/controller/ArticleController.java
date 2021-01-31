@@ -6,9 +6,7 @@ import com.sitech.aicareer.bean.query.ArticlePageQuery;
 import com.sitech.aicareer.pojo.Article;
 import com.sitech.aicareer.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/article")
@@ -23,5 +21,11 @@ public class ArticleController {
         PageResult<Article> articles = articleService.getArticlePageQuery(pageQuery);
 
         return JsonData.success(articles);
+    }
+
+    @PostMapping("delete/{id}")
+    public JsonData deleteArticle(@PathVariable("id") Long articleId) {
+        articleService.deleteArticle(articleId);
+        return JsonData.success("删除成功");
     }
 }

@@ -4,10 +4,12 @@ import com.sitech.aicareer.bean.JsonData;
 import com.sitech.aicareer.pojo.Article;
 import com.sitech.aicareer.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/article")
+@RequestMapping("/extension")
 public class ExtensionController {
     @Autowired
     ArticleService articleService;
@@ -23,9 +25,4 @@ public class ExtensionController {
         return JsonData.success("添加帖子成功");
     }
 
-    @PostMapping("delete/{id}")
-    public JsonData deleteArticle(@PathVariable("id") Long articleId) {
-        articleService.deleteArticle(articleId);
-        return JsonData.success("删除成功");
-    }
 }

@@ -80,11 +80,7 @@ export default {
                         },
                         {
                             index: 'attachment',
-                            title: '附件列表'
-                        },
-                        {
-                            index: 'G6Demo',
-                            title: 'G6Demo'
+                            title: '交付附件列表'
                         },
                         {
                             index: 'mindmap',

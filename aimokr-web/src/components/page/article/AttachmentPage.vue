@@ -5,7 +5,7 @@
                 <el-breadcrumb-item>
                     <i class="el-icon-lx-calendar"></i> 任务管理
                 </el-breadcrumb-item>
-                <el-breadcrumb-item>交付帖子</el-breadcrumb-item>
+                <el-breadcrumb-item>附件列表</el-breadcrumb-item>
             </el-breadcrumb>
         </div>
         <div class="container">
@@ -148,7 +148,7 @@
                         }
                     });
                 })
-                .catch(() => {});
+                    .catch(() => {});
             },
             // 多选操作
             handleSelectionChange(val) {

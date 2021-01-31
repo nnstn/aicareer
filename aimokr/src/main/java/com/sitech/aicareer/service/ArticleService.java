@@ -66,9 +66,11 @@ public class ArticleService {
         article.setLastUpdateTime(new Date());
         return articleMapper.updateByPrimaryKey(article);
     }
-
-    public int deleteArticle(Long productGainId) {
-        return articleMapper.deleteByPrimaryKey(productGainId);
+    @Transactional
+    public int deleteArticle(Long articleId) {
+        //删除关联附件
+        int i = attchmentService.deleteAttachmentByArticle(articleId);
+        //删除数据
+        return articleMapper.deleteByPrimaryKey(articleId);
     }
-
 }

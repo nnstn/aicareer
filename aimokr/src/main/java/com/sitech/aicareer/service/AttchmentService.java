@@ -31,7 +31,9 @@ public class AttchmentService {
         attachment.setLastUpdateTime(new Date());
         return attachmentMapper.updateByPrimaryKey(attachment);
     }
-
+    public int deleteAttachmentByArticle(Long articleId) {
+        return attachmentMapper.deleteByArticle(articleId);
+    }
     public int deleteAttachment(Long attachmentId) {
         return attachmentMapper.deleteByPrimaryKey(attachmentId);
     }
