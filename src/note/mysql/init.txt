@@ -64,6 +64,10 @@ create table `article` (
   `author`  varchar(50) not null  comment    '帖子作者',
   `article_title`   varchar(200)  comment '帖子标题',
   `article_url`   varchar(200)  comment '帖子地址',
+  `community_name`   varchar(200)  comment '圈子名称',
+  `community_url`   varchar(200)  comment '圈子地址',
+  `team_name`   varchar(200)  comment '分组名称',
+  `team_url`   varchar(200)  comment '分组地址',
   `publish_date` datetime default null comment '发帖日期',
   `update_date` datetime default null comment '最后更新日期',
   `create_time` datetime default null comment '采集时间',
@@ -71,6 +75,11 @@ create table `article` (
   `operate_ip`     varchar(50) not null comment '采集用户IP',
   primary key (`article_id`)
 ) engine=innodb auto_increment=1 default charset=utf8 comment '帖子交付列表';
+
+ALTER TABLE `office`.`article` ADD COLUMN `community_name` varchar(255) comment '圈子名称' NULL AFTER `publish_date`;
+ALTER TABLE `office`.`article` ADD COLUMN `community_url` varchar(255) comment '圈子地址' NULL AFTER `article_url`;
+ALTER TABLE `office`.`article` ADD COLUMN `team_name` varchar(255) comment '分组名称' NULL AFTER `article_url`;
+ALTER TABLE `office`.`article` ADD COLUMN `team_url` varchar(255)  comment '分组地址' NULL AFTER `article_url`;
 
 DROP TABLE IF EXISTS `attachment` ;
 create table `attachment` (

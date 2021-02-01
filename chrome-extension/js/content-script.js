@@ -7,6 +7,11 @@ if( $("#collectbtn").length ){
         var author =$(".author a").html(); //帖子作者
         var publist_date =$(".publist-date").html();//发布日期
         var update_date =$(".update-date").html();//最后更新日期
+
+        var communityName =$(".home").text();//圈子名称
+        var communityUrl =$(".home").attr("href");//圈子地址
+        var teamName =$(".home").next().text();//分组名称
+        var teamUrl =$(".home").next().attr("href");//分组地址
         var url = window.location.href;
         var article_id = url.substring(url.lastIndexOf("/")+1)
         let param = {
@@ -16,6 +21,10 @@ if( $("#collectbtn").length ){
             "articleUrl":url,
             "publishDate":publist_date,
             "updateDate":update_date,
+            "communityName":communityName,
+            "communityUrl":communityUrl,
+            "teamName":teamName,
+            "teamUrl":teamUrl,
             "attachment":[]
         };
         if($(".art-affix1>.down").size()>0){
@@ -60,4 +69,14 @@ if( $("#collectbtn").length ){
             }
         });
     });
+}
+
+var oHtml = document.getElementsByTagName("html")[0];
+oHtml.onkeydown = function(ev) {
+    console.log(ev.ctrlKey)
+    console.log("键盘按钮："+ev.keyCode)
+    if(ev.ctrlKey  && ev.keyCode == 81) {
+        console.log("存储帖子组合件 CTRL+Q");
+        $("#collectbtn").trigger("click");
+    }
 }
