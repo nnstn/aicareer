@@ -1,5 +1,6 @@
 package com.sitech.aicareer.config;
 
+import com.sitech.aicareer.web.filter.CommonFilter;
 import com.sitech.aicareer.web.filter.LoginFilter;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
@@ -14,6 +15,13 @@ public class WebConfig {
         bean.setFilter(new LoginFilter());
         bean.addUrlPatterns("/task/*");
         bean.addUrlPatterns("/camera/*");
+        return bean;
+    }
+    @Bean
+    public FilterRegistrationBean<CommonFilter> commonFilterRegistration(){
+        FilterRegistrationBean<CommonFilter> bean = new FilterRegistrationBean<CommonFilter>();
+        bean.setFilter(new CommonFilter());
+        bean.addUrlPatterns("/*");
         return bean;
     }
 }

@@ -30,8 +30,8 @@ public class LoginFilter implements Filter {
             return;
         }
         RequestHolder.add(sysUser);
-        RequestHolder.add(req);
         filterChain.doFilter(servletRequest, servletResponse);
+        RequestHolder.remove();
         return;
     }
     @Override

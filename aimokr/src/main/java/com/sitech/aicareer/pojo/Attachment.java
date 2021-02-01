@@ -11,11 +11,11 @@ import java.util.Date;
 public class Attachment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String productName;
-    private String productUrl;
+    private Long attachId;
+    private Long articleId;
+    private String attachName;
+    private String attachUrl;
     private Date createTime;
     private Date lastUpdateTime;
     private String operateIp;
-
 }

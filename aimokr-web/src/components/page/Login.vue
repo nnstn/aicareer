@@ -35,7 +35,7 @@
             return {
                 param: {
                     userCode: 'wangjn_bj',
-                    password: '123456',
+                    password: 'wangjn_bj',
                 },
                 rules: {
                     userCode: [{required: true, message: '请输入用户名或邮箱', trigger: 'blur'}],

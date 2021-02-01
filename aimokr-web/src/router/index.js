@@ -30,14 +30,19 @@ export default new Router({
                     meta: { title: '任务列表' }
                 },
                 {
-                    path: '/G6Demo',
-                    component: () => import(/* webpackChunkName: "dashboard" */ '../components/g6/G6demo.vue'),
-                    meta: { title: 'G6Demo' }
-                },
-                {
                     path: '/mindmap',
                     component: () => import(/* webpackChunkName: "dashboard" */ '../components/g6/mindmap.vue'),
                     meta: { title: 'mindmap' }
+                },
+                {
+                    path: '/ArticlePage',
+                    component: () => import(/* webpackChunkName: "dashboard" */ '../components/page/article/ArticlePage.vue'),
+                    meta: { title: 'article' }
+                },
+                {
+                    path: '/attachment',
+                    component: () => import(/* webpackChunkName: "dashboard" */ '../components/page/article/AttachmentPage.vue'),
+                    meta: { title: 'attachment' }
                 },
                 {
                     path: '/icon',
