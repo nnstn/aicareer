@@ -76,11 +76,6 @@ create table `article` (
   primary key (`article_id`)
 ) engine=innodb auto_increment=1 default charset=utf8 comment '帖子交付列表';
 
-ALTER TABLE `office`.`article` ADD COLUMN `community_name` varchar(255) comment '圈子名称' NULL AFTER `publish_date`;
-ALTER TABLE `office`.`article` ADD COLUMN `community_url` varchar(255) comment '圈子地址' NULL AFTER `article_url`;
-ALTER TABLE `office`.`article` ADD COLUMN `team_name` varchar(255) comment '分组名称' NULL AFTER `article_url`;
-ALTER TABLE `office`.`article` ADD COLUMN `team_url` varchar(255)  comment '分组地址' NULL AFTER `article_url`;
-
 DROP TABLE IF EXISTS `attachment` ;
 create table `attachment` (
   `attach_id` bigint(20) not null auto_increment comment '附件ID',

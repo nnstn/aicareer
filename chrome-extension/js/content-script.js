@@ -1,3 +1,6 @@
+// var aicareerUrl= "http://localhost:8090/extension/collect";
+var aicareerUrl= "http://aicp.teamshub.com/aicareer/extension/collect";
+
 $("h2.art-tt").after("<button id='collectbtn' style='background-color:yellow;border: none'>采集</button>");
 
 if( $("#collectbtn").length ){
@@ -13,7 +16,9 @@ if( $("#collectbtn").length ){
         var teamName =$(".home").next().text();//分组名称
         var teamUrl =$(".home").next().attr("href");//分组地址
         var url = window.location.href;
-        var article_id = url.substring(url.lastIndexOf("/")+1)
+        url= url.indexOf("?")==-1?url:url.substring(0,url.indexOf("?"));
+        var article_id = url.substring(url.lastIndexOf("/")+1);
+        //var article_id = url.substring(url.lastIndexOf("/")+1,url.indexOf("?")==-1?url.length:url.indexOf("?"));
         let param = {
             "articleId":article_id,
             "author":author,
@@ -35,23 +40,9 @@ if( $("#collectbtn").length ){
                 param["attachment"].push({"attachName":name,"attachUrl":value});
             }
         }
-        // {
-        //     "articleId":1121,
-        //     "author":"wangjn_bj",
-        //     "articleUrl":"11",
-        //     "publishDate":"2021-01-29 15:20",
-        //     "updateDate":"2021-01-29 15:20",
-        //     "attachment":[
-        //         {
-        //             "attachId":1121,
-        //             "attachName":"attachName",
-        //             "attachUrl":"13123"
-        //         }
-        //     ]
-        // }
         $.ajax({
             type : 'POST',
-            url : "http://localhost:8090/extension/collect",
+            url : aicareerUrl,
             async : false,
             data:JSON.stringify(param),
             dataType : 'json',
@@ -73,10 +64,7 @@ if( $("#collectbtn").length ){
 
 var oHtml = document.getElementsByTagName("html")[0];
 oHtml.onkeydown = function(ev) {
-    console.log(ev.ctrlKey)
-    console.log("键盘按钮："+ev.keyCode)
     if(ev.ctrlKey  && ev.keyCode == 81) {
-        console.log("存储帖子组合件 CTRL+Q");
         $("#collectbtn").trigger("click");
     }
 }

@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: dev
+    active: company
 # 服务端口
 server:
   port: 8090
