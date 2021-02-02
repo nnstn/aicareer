@@ -20,7 +20,12 @@ public class ExtensionController {
     @RequestMapping("/collect")
     public JsonData postArticle(@RequestBody Article article){
 
-        articleService.insertArticle(article);
+        try {
+            articleService.insertArticle(article);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return JsonData.fail("添加帖子失败");
+        }
 
         return JsonData.success("添加帖子成功");
     }

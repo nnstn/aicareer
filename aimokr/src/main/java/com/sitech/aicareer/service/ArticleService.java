@@ -48,7 +48,7 @@ public class ArticleService {
 
     }
 
-    @Transactional
+    @Transactional(rollbackFor = Exception.class)
     public int insertArticle(Article article) {
         HttpServletRequest request = RequestHolder.getCurrentRequest();
         if(article.getAttachment().size()>0){
@@ -62,11 +62,13 @@ public class ArticleService {
         article.setOperateIp(request.getRemoteAddr());
         return articleMapper.insert(article);
     }
+
     public int updateArticle(Article article) {
         article.setLastUpdateTime(new Date());
         return articleMapper.updateByPrimaryKey(article);
     }
-    @Transactional
+
+    @Transactional(rollbackFor = Exception.class)
     public int deleteArticle(Long articleId) {
         //删除关联附件
         int i = attchmentService.deleteAttachmentByArticle(articleId);

@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.sitech.aicareer</groupId>
-    <name>迭代明细</name>
+    <name>aimokr</name>
     <artifactId>aimokr</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
@@ -59,5 +59,16 @@
             <version>3.8.1</version>
         </dependency>
     </dependencies>
-
+    <build>
+        <finalName>aimokr</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <classifier>exec</classifier>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
