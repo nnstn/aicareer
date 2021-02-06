@@ -68,3 +68,24 @@ oHtml.onkeydown = function(ev) {
         $("#collectbtn").trigger("click");
     }
 }
+
+function ShowTip(tip, type) {
+    var $tip = $('#tip');
+    if ($tip.length == 0) {
+        // 设置样式，也可以定义在css文件中
+        $tip = $('<span id="tip" style="transform:translate(-50%,-50%);position:fixed;top:50%;left: 50%;z-index:9999;height:28px; padding: 2px 16px;line-height: 28px;color:#fff;background:rgba(0,0,0,0.7);font-size:12px;border-radius:4px;"></span>');
+        $('body').append($tip);
+    }
+    $tip.stop(true).prop('class', 'alert alert-' + type).text(tip).fadeIn(500).delay(1000).fadeOut(500);
+}
+// 正在加载中
+//loading.ShowLoading(); 显示   loading.CloseLoading();隐藏
+var loading={
+    loadingHtml:'<div class="loading" style="display: flex;align-items: center; transform:translate(-50%,-50%);position:fixed;top:50%;left: 50%;z-index:9999;height:28px; padding: 2px 16px;line-height: 28px;color:#fff;background:rgba(0,0,0,0.7);font-size:12px;border-radius:4px;"><img style="width: 14px;height: 14px;margin-right: 6px;" src="img/loading.gif" />正在加载中</div>',
+    ShowLoading:function(){
+        $('body').append(loading.loadingHtml);
+    },
+    CloseLoading:function(){
+        $('body .loading').remove();
+    }
+}
