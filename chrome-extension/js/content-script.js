@@ -43,32 +43,43 @@ function sendArticle() {
         "teamUrl":teamUrl,
         "attachment":[]
     };
-    if($(".art-affix1>.down").size()>0){
-        for(let i=0;i< $(".art-affix1>.down").size();i++) {
+    if($(".art-affix1>.down").length>0){
+        for(let i=0;i< $(".art-affix1>.down").length;i++) {
             let name = $(".art-affix1>.down").eq(i).text();
             let value = $(".art-affix1>.down").eq(i).attr("href");
             var attach_id = value.substring(value.lastIndexOf("/")+1)
             param["attachment"].push({"attachName":name,"attachUrl":value});
         }
     }
+    asyncRequest(aicareerUrl,JSON.stringify(param)
+        ,function (result) {
+            alert(result.data);
+        }
+        ,function(xhrObj, txtStatus, errorThrown){
+            alert(xhrObj);
+        });
+}
+
+
+function asyncRequest(url,param,successFunc,errorFunc) {
     $.ajax({
         type : 'POST',
         url : aicareerUrl,
-        async : false,
-        data:JSON.stringify(param),
+        async : true,
+        data: param,
         dataType : 'json',
         contentType: "application/json",
         traditional:true,
         timeout:120000,
         success : function(result,status,resp) {
-            alert(result.data);
+            successFunc(result,status,resp);
         },
         complete:function(){
 
         },
         error: function(xhrObj, txtStatus, errorThrown) {
-            //serviceError(xhrObj, txtStatus, errorThrown);
+            serviceError(xhrObj, txtStatus, errorThrown);
         }
     });
-
+    
 }

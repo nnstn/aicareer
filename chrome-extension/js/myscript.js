@@ -1,114 +1,16 @@
-if( $("#schdulebtn").length ){
+$(document).ready(function() {
+    //默认active
+    $(".tab_content").hide(); //隐藏全部的tab菜单内容
+    $("ul.tabs li:first").addClass("active").show(); //对第一个li标签添加class="active属性"
+    $(".tab_content:first").show(); //显示第一个tab内容
 
-  $("#schdulebtn").bind("click",function(){
-      var title = $("h2.art-tt").html(); //帖子标题
-      var author =$(".author a").html(); //帖子作者
-      var publist_date =$(".publist-date").html();//发布日期
-      var update_date =$(".update-date").html();//最后更新日期
-      var url = window.location.href;
-    let param = {};
-    $.ajax({
-      type : 'POST',
-      url : "http://localhost:9016/generate/orderid",
-      async : false,
-      data:param,
-      dataType : 'json',
-      traditional:true,
-      timeout:120000,
-      success : function(result,status,resp) {
-        alert(result.data);
-      },
-      complete:function(){
-
-      },
-      error: function(xhrObj, txtStatus, errorThrown) {
-        serviceError(xhrObj, txtStatus, errorThrown);
-      }
+    //点击事件
+    $("ul.tabs li").click(function() {
+        $("ul.tabs li").removeClass("active"); //移除class="active"属性
+        $(this).addClass("active"); //添加class="active"到选择标签中
+        $(".tab_content").hide(); //隐藏全部标签内容
+        var activeTab = $(this).find("a").attr("href"); //找到所属属性值来识别活跃选项卡和内容
+        $(activeTab).fadeIn(); //使内容消失
+        return false;
     });
-  });
-}
-
-if(localStorage['c'] ){
-  if(localStorage['c']>0 ){
-    $("#disconnectbtn").attr("disabled",false);
-      $("#connectbtn").attr("disabled",true);
-    }else{
-      $("#disconnectbtn").attr("disabled",true);
-      $("#connectbtn").attr("disabled",false);
-    }
-
-}
-
-//chrome.runtime.onStartup.addListener(function(){ init();});
-// bind event for connectbtn
-if( $("#connectbtn").length ){
-  $("#connectbtn").bind("click",function(){
-    connect();
-  }
-);
-
-
-
-}
-
-
-if( $("#tmpserver").length ){
-  $("#tmpserver").bind("select",function(){
-    connect();
-  }
-    );
-
-
-}
-
-
-if( $("#disconnectbtn").length ){
-  $("#disconnectbtn").bind("click",function(){
-    removeProxy();
-  }
-    );
-
-}
-
-
-
-
-
-function removeProxy(){
-  localStorage['c']=0;
-
-var config = {
-  mode: "system"
-};
-
-chrome.proxy.settings.set(
-    {value: config, scope: 'regular'},
-    function() {});
-      $("#disconnectbtn").attr("disabled",true);
-      $("#connectbtn").attr("disabled",false);
-
-
-}
-
-
-
-function connect(){
-  localStorage['c']=1;
-httpsserver = document.getElementById("tmpserver").value;
- var config = {
-            mode: "pac_script",
-            pacScript: {
-              data: "function dnsDomainIs(host, pattern) {return host.length >= pattern.length && (host === pattern || host.substring(host.length - pattern.length - 1) === '.' + pattern);};\n"+
-            "function FindProxyForURL(url, host) {\n"+
-            "var PROXY = 'HTTPS  "+httpsserver+"'\n"+
-           " return PROXY;\n"+
-          "}\n"
-            }
-          };
-          $("#connectbtn").attr("disabled",true);
-          $("#disconnectbtn").attr("disabled",false);
-
-      chrome.proxy.settings.set( {value: config, scope: 'regular'},function() {
-
-      });
-}
+});

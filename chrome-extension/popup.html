@@ -6,12 +6,26 @@
 <link rel="stylesheet" href="main.css" type="text/css" media="screen" />
 <script src="./js/jquery.js"></script>
 </head>
-<body>
-<div style="margin-top:10px">
-    <form class="form-inline">
-    </form>
-</div>
-<script src="./js/myscript.js"></script>
 
+<body>
+    <div id="container">
+        <ul>
+            <li class="active"><a href="#tab1">待办工作</a></li>
+            <li><a href="#tab1">项目信息</a></li>
+            <li><a href="#tab1">快捷记事</a></li>
+        </ul>
+        <div class="tabs">
+            <div id="#tab1" class="tab_content">
+                todolist
+            </div>
+            <div id="#tab2" class="tab_content">
+                projects
+            </div>
+            <div id="#tab3" class="tab_content">
+                快捷记事
+            </div>
+        </div>
+    </div>
 </body>
+<script src="./js/myscript.js"></script>
 </html>
