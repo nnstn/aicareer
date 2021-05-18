@@ -10,7 +10,7 @@ $(document).ready(function() {
         $(this).addClass("active"); //添加class="active"到选择标签中
         $(".tab_content").hide(); //隐藏全部标签内容
         var activeTab = $(this).find("a").attr("href"); //找到所属属性值来识别活跃选项卡和内容
-        $(activeTab).fadeIn(); //使内容消失
+        $(activeTab).show(); //使内容消失
         return false;
     });
 });

@@ -85,3 +85,15 @@ table{
     border-top:2px saddlebrown solid;
     padding:0px;
 }
+table{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+table tr th {
+    text-align:center;
+    border: 1px solid;
+}
+table tr td {
+    text-align:center;
+    border: 1px solid;
+}
