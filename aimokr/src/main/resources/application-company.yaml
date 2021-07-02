@@ -49,3 +49,16 @@ picture:
 #模型算法平台能力目录redis是否加载
 modelAlgorithm:
   redis: true
+
+master:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://172.18.199.16:3306/interactive?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+promote:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://172.18.199.16:3306/promotedb?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
