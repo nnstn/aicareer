@@ -2,8 +2,8 @@ aicareer:
   aimokr:
     mysql:
      url: localhost:3306
-     username: office
-     password: office
+     username: aicareer
+     password: aicareer
 #  password: ENC(ZDmMiOphZxP1u04rRdQ5WUR+FXDOndWR)
 # 连接四大参数 serverTimezone=UTC会比中国早8个小时
 master:

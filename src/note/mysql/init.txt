@@ -91,7 +91,7 @@ create table `rbac_user` (
   `password` varchar(200) not null default '' comment '加密后的密码',
   `public_key` varchar(20) comment '公钥 MD5盐值 RSA公钥',
   `telephone` varchar(13) default '' comment '手机号',
-  `mail` varchar(255) default '' comment '邮箱',
+  `email` varchar(255) default '' comment '电子邮箱',
   `rbac_user_icon` varchar(255) default null comment '人脸头像',
   `dept_id` int(11) default '0' comment '用户所在部门的id(保留字段)',
   `sso_code` varchar(255) default null comment '集成单点登录系统映射ID',
@@ -100,6 +100,8 @@ create table `rbac_user` (
   `last_update_time`  bigint(20) not null comment '最后更新时间',
   `last_update_ip`   varchar(50) not null comment '最后更新用户ip',
   `last_update_uid`  varchar(50) default null comment '最后更新用户id',
+  `last_login_ip`  varchar(50) default null comment '最后登录IP',
+  `last_login_time`  bigint(20) default null comment '最后登录时间',
   `remark` varchar(200) default '' comment '备注',
   primary key (`user_id`) using btree
 ) engine=innodb auto_increment=0 default charset=utf8 comment='用户表';

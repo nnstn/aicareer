@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: company
+    active: dev
   servlet:
     multipart:
       enabled: true #是否启用http上传处理

@@ -1,6 +1,7 @@
 package com.wrt.aicareer.po;
 
 import com.wrt.aicareer.power.bean.BasePO;
+import com.wrt.aicareer.power.constants.ConstantRbac;
 import com.wrt.aicareer.web.holder.RequestHolder;
 import lombok.Data;
 
@@ -26,7 +27,7 @@ public class RbacUser  extends BasePO {
     private String password;
     private String publicKey;
     private String telephone;
-    private String mail;
+    private String email;
     private String rbacUserIcon;
     private String deptId;
     private String ssoCode;
@@ -35,11 +36,18 @@ public class RbacUser  extends BasePO {
     private Long lastUpdateTime;
     private String lastUpdateIp;
     private String lastUpdateUid;
+    private Long lastLoginTime; // 最后登录时间
+    private String lastLoginIp; // 最后登录IP
     private String remark;
 
 
     public void update(){
         this.setLastUpdateTime(System.currentTimeMillis());
         this.setLastUpdateIp(RequestHolder.getRemoteIp());
+    }
+    public void login(){
+        this.setLastLoginIp(RequestHolder.getRemoteIp());
+        this.setLastLoginTime(System.currentTimeMillis());
+        RequestHolder.getCurrentRequest().getSession().setAttribute(ConstantRbac.SESSION_USER,this);
     }
 }
