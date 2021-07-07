@@ -4,16 +4,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>aicareer</artifactId>
-        <groupId>com.sitech.aicareer</groupId>
+        <groupId>com.wrt.aicareer</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.sitech.aicareer</groupId>
+    <groupId>com.wrt.aicareer</groupId>
     <name>aimokr</name>
     <artifactId>aimokr</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
+        <dependency>
+            <groupId>com.wrt.aicareer</groupId>
+            <artifactId>aipower</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <!--sping boot web-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -46,17 +51,6 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.46</version>
-        </dependency>
-        <!--fastjson-->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.49</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.8.1</version>
         </dependency>
         <dependency>
             <groupId>redis.clients</groupId>

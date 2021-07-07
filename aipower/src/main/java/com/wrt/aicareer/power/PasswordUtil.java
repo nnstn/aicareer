@@ -1,4 +1,4 @@
-package com.sitech.aicareer.utils;
+package com.wrt.aicareer.power;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
@@ -12,8 +12,8 @@ public class PasswordUtil {
 	/**********************DES加密**********************/
 	/** 
 	* 解密 
-	* @param src 数据源 
-	* @param key 密钥，长度必须是8的倍数 
+	* @param 数据源
+	* @param 密钥，长度必须是8的倍数
 	* @return 返回解密后的原始数据 
 	* @throws Exception 
 	*/

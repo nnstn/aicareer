@@ -1,4 +1,4 @@
-package cc.eguid.javacv;
+package com.wrt.iot.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
@@ -18,7 +18,7 @@ import static org.bytedeco.javacpp.opencv_imgcodecs.cvSaveImage;
 @Slf4j
 public class VideoService {
 
-    private static void prepare(){
+    public static void prepare(){
         long start = System.currentTimeMillis();
         Loader.load(opencv_objdetect.class);
         long cost = System.currentTimeMillis()-start;
@@ -39,9 +39,9 @@ public class VideoService {
             }
 
             grabber.start();//开启抓取器
-//          grabberOneFrame(grabber);// 获取一帧图片
+          grabberOneFrame(grabber);// 获取一帧图片
             // 展示java客户端
-            cameraShow(grabber);
+            //cameraShow(grabber);
 
 
         } catch (FrameGrabber.Exception e) {
@@ -61,7 +61,7 @@ public class VideoService {
                 System.out.println("取到第一帧");
                 grabbedImage = converter.convert(grabframe);
                 //如果想要保存图片,可以使用
-                cvSaveImage("D://hello.jpg", grabbedImage);
+                cvSaveImage("/aicp/applications/rstp/"+System.currentTimeMillis()+".jpg", grabbedImage);
             }else{
                 System.out.println("沒有取到第一帧");
             }

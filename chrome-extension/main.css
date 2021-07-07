@@ -41,9 +41,16 @@ button, input, select, textarea{      /* 使得表单元素在 ie 下能继承�
 }
 
 /** 重置表格元素 **/
-table{
+/*table{*/
+/*    border-collapse: collapse;*/
+/*    border-spacing: 0;*/
+/*}*/
+table {
     border-collapse: collapse;
-    border-spacing: 0;
+}
+
+table, td, th {
+    border: 1px solid black;
 }
 /** reset.css 结束 **/
 
@@ -98,7 +105,7 @@ table tr td {
     valign: middle;
     align: center;
     text-align:center;
-    border: 1px solid;
+    /*border: 1px solid;*/
 }
 
 /*开关样式 start*/
@@ -128,7 +135,7 @@ table tr td {
     content: "";
     height: 19px;
     width: 19px;
-    left: 4px;
+    left: 0px;
     bottom: 1px;
     background-color: white;
     -webkit-transition: .4s;
@@ -139,14 +146,11 @@ input:checked + .slider {
     background-color: #2196F3;
 }
 
-input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-}
 
 input:checked + .slider:before {
-    -webkit-transform: translateX(21px);
-    -ms-transform: translateX(21px);
-    transform: translateX(21px);
+    -webkit-transform: translateX(28px);
+    -ms-transform: translateX(28px);
+    transform: translateX(28px);
 }
 
 /* Rounded sliders */

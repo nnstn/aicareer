@@ -1,0 +1,20 @@
+aicareer:
+  aimokr:
+    mysql:
+     url: localhost:3306
+     username: office
+     password: office
+#  password: ENC(ZDmMiOphZxP1u04rRdQ5WUR+FXDOndWR)
+# 连接四大参数 serverTimezone=UTC会比中国早8个小时
+master:
+  datasource:
+    username: ${aicareer.aimokr.mysql.username}
+    password: ${aicareer.aimokr.mysql.password}
+    url: jdbc:mysql://${aicareer.aimokr.mysql.url}/aicareer?serverTimezone=UTC&useUnicode=true&useSSL=false&characterEncoding=utf-8
+    driver-class-name: com.mysql.jdbc.Driver
+rbac:
+  datasource:
+    username: ${aicareer.aimokr.mysql.username}
+    password: ${aicareer.aimokr.mysql.password}
+    url: jdbc:mysql://${aicareer.aimokr.mysql.url}/aicareer?serverTimezone=UTC&useUnicode=true&useSSL=false&characterEncoding=utf-8
+    driver-class-name: com.mysql.jdbc.Driver

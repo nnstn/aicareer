@@ -4,60 +4,56 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>aicareer</artifactId>
-        <groupId>com.sitech.aicareer</groupId>
+        <groupId>com.wrt.aicareer</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.sitech.aicareer</groupId>
-    <artifactId>iot</artifactId>
+    <groupId>com.wrt.aicareer</groupId>
+    <artifactId>airbac</artifactId>
     <version>1.0-SNAPSHOT</version>
-
     <dependencies>
+        <dependency>
+            <groupId>com.wrt.aicareer</groupId>
+            <artifactId>aipower</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <!--sping boot web-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!--RTSP流处理 开始-->
+        <!--spring boot aop-->
         <dependency>
-            <groupId>org.bytedeco</groupId>
-            <artifactId>javacv-platform</artifactId>
-            <version>1.4.4</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
-        <!--RTSP流处理 结束-->
+        <!--通用Mapper-->
         <dependency>
-            <groupId>commons-lang</groupId>
-            <artifactId>commons-lang</artifactId>
-            <version>2.6</version>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper-spring-boot-starter</artifactId>
+            <version>2.0.2</version>
         </dependency>
-
-        <!--视频处理 开始-->
-        <!--<dependency>
-            <groupId>org.bytedeco</groupId>
-            <artifactId>javacv</artifactId>
-            <version>1.4.4</version>
-        </dependency>
+        <!--Pagehelper分页查询-->
         <dependency>
-            <groupId>org.bytedeco</groupId>
-            <artifactId>javacpp</artifactId>
-            <version>1.4.4</version>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>1.2.10</version>
         </dependency>
+        <!--Druid数据源-->
         <dependency>
-            <groupId>org.bytedeco.javacpp-presets</groupId>
-            <artifactId>opencv-platform</artifactId>
-            <version>3.4.1-1.4.1</version>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.1.10</version>
         </dependency>
         <dependency>
-            <groupId>org.bytedeco.javacpp-presets</groupId>
-            <artifactId>ffmpeg-platform</artifactId>
-            <version>3.4.2-1.4.1</version>
-        </dependency>-->
-
-        <!--视频处理 结束-->
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.46</version>
+        </dependency>
     </dependencies>
     <build>
-        <finalName>iot</finalName>
+        <finalName>airbac</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -68,4 +64,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

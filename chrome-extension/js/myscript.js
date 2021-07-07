@@ -13,4 +13,11 @@ $(document).ready(function() {
         $(activeTab).show(); //使内容消失
         return false;
     });
+    $(".switch").click(function(){
+
+        //alert("kskk")
+       // e.stopPropagation();
+    })
+
+
 });
