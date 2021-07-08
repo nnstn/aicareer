@@ -28,29 +28,17 @@ public class RoleController {
     @PostMapping("/add")
     public JsonData register(@RequestBody RbacRole role){
         log.info("进入用户注册方法");
-        if(StringUtils.isBlank(user.getUsername())){
-            return JsonData.fail("用户名不能为空");
+        if(StringUtils.isBlank(role.getRoleName())){
+            return JsonData.fail("角色名称不能为空");
         }
-        if(StringUtils.isBlank(user.getTelephone())){
-            return JsonData.fail("手机号不能为空");
-        }
-        if(StringUtils.isBlank(user.getPassword())){
-            return JsonData.fail("密码不能为空");
-        }
-        if(StringUtils.isBlank(user.getEmail())){
-            return JsonData.fail("邮箱不能为空");
-        }
-        return rbacUserService.register(user);
+        return rbacRoleService.create(role);
     }
-    @PostMapping("/login")
-    public JsonData login(@RequestBody RbacUser user){
-        log.info("进入用户登录方法");
-        if(StringUtils.isBlank(user.getUsername())){
-            return JsonData.fail("用户名不能为空");
+    @PostMapping("/update")
+    public JsonData update(@RequestBody RbacRole role){
+        log.info("进入用户注册方法");
+        if(StringUtils.isBlank(role.getRoleName())){
+            return JsonData.fail("角色名称不能为空");
         }
-        if(StringUtils.isBlank(user.getPassword())){
-            return JsonData.fail("密码不能为空");
-        }
-        return rbacUserService.login(user);
+        return rbacRoleService.update(role);
     }
 }

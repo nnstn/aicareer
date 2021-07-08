@@ -1,8 +1,14 @@
 package com.wrt.aicareer.service;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.wrt.aicareer.bean.RoleQueryBean;
+import com.wrt.aicareer.po.RbacRole;
 import com.wrt.aicareer.po.RbacUser;
 import com.wrt.aicareer.power.bean.JsonData;
+import com.wrt.aicareer.power.bean.PageResult;
 import com.wrt.aicareer.power.utils.RegexUtils;
+import com.wrt.aicareer.rbac.mapper.RbacRoleMapper;
 import com.wrt.aicareer.rbac.mapper.RbacUserMapper;
 import org.springframework.stereotype.Service;
 
@@ -16,53 +22,39 @@ import java.util.List;
 public class RbacRoleService {
 
     @Resource
-    RbacUserMapper rbacUserMapper;
+    RbacRoleMapper rbacRoleMapper;
 
     /**
-     * 用户注册
+     * 分页查询
      */
-    public JsonData register(RbacUser rbacUserPO){
-
-        if(!RegexUtils.isMobile(rbacUserPO.getTelephone())
-                || !RegexUtils.isEmail(rbacUserPO.getEmail())){
-            return JsonData.fail("用户邮箱或手机号格式不对");
+    public PageResult<RbacRole> selectRoleQuery(RoleQueryBean pageQuery) {
+        if(pageQuery.getSortBy()==null||pageQuery.getSortBy().length()==0){
+            pageQuery.setSortBy("last_update_time");
         }
+        // 分页
+        PageHelper.startPage(pageQuery.getPageNo(), pageQuery.getPageSize(), pageQuery.getSortBy() + (pageQuery.getDesc() ? " DESC" : " ASC"));
+        // 查询
+        List<RbacRole> roles = rbacRoleMapper.selectRoleQuery(pageQuery);
 
-        List<RbacUser> userByNameList = rbacUserMapper.getUserByCode(rbacUserPO.getUsername());
-        if(userByNameList.size()>0){
-            return JsonData.fail("此用户名已有人使用");
-        }
+        PageInfo<RbacRole> info = new PageInfo<>(roles);
+        // 解析分页结果
+        return new PageResult<RbacRole>(info.getTotal(), roles);
 
-        List<RbacUser> userByTelephoneList = rbacUserMapper.getUserByCode(rbacUserPO.getTelephone());
-        if(userByTelephoneList.size()>0){
-            return  JsonData.fail("此手机号已有人使用");
-        }
-
-        List<RbacUser> userByEmailList = rbacUserMapper.getUserByCode(rbacUserPO.getEmail());
-        if(userByEmailList.size()>0){
-            return  JsonData.fail("此用户名已有人使用");
-        }
-
-        rbacUserPO.update();
-        rbacUserMapper.insert(rbacUserPO);
-        return JsonData.success(rbacUserPO);
     }
-
     /**
-     * 用户登录
+     * 创建角色
      */
-    public JsonData login(RbacUser user) {
-        List<RbacUser> rbacUserList = rbacUserMapper.getUserByCode(user.getUsername());
-        if(null==rbacUserList || rbacUserList.size() !=1 ){
-            return JsonData.fail("用户账号异常");
-        }
-        if(user.getPassword().equalsIgnoreCase(rbacUserList.get(0).getPassword())){
-            // 更新登录时间
-            RbacUser rbacUser = rbacUserList.get(0);
-            rbacUser.login();
-            rbacUserMapper.updateByPrimaryKey(rbacUser);
-            return JsonData.success(user);
-        }
-        return JsonData.fail("登录失败");
+    public JsonData create(RbacRole role) {
+        role.create();
+        rbacRoleMapper.insert(role);
+        return JsonData.success(role);
+    }
+    /**
+     * 更新角色
+     */
+    public JsonData update(RbacRole role) {
+        role.update();
+        rbacRoleMapper.updateByPrimaryKey(role);
+        return JsonData.success(role);
     }
 }
