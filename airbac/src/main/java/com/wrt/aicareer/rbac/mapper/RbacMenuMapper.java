@@ -17,23 +17,6 @@ import java.util.List;
 
 public interface RbacMenuMapper extends Mapper<RbacMenu> {
 
-    @Select("select * from rbac_user where 1=1 " +
-            "and (username=#{userCode} " +
-            "or telephone=#{userCode} or email =#{userCode})")
-    List<RbacUser> getUserByCode(@Param("userCode") String userCode);
-
-    @SelectProvider(type = RbacMapperSql.class, method = "selectUsers")
-    List<RbacUser> selectUsers(RbacUser user);
-
-    class RbacMapperSql{
-
-        public String selectUsers(RbacUser rbacUser){
-            StringBuilder sqlBuilder = new StringBuilder();
-            sqlBuilder.append("select * from rbac_user where 1=1");
-            if(StringUtils.isNoneBlank(rbacUser.getUsername())){
-                sqlBuilder.append(" and  article_title like CONCAT('%','"+rbacUser.getUsername()+"','%')");
-            }
-            return sqlBuilder.toString();
-        }
-    }
+    @Select("select * from rbac_menu where menu_name =#{menuName})")
+    List<RbacUser> getMenuByCode(@Param("menuName") String menuName);
 }

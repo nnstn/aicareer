@@ -39,6 +39,9 @@ public interface RbacRoleMapper extends Mapper<RbacRole> {
             if(StringUtils.isNoneBlank(pageQuery.getCreateUid())){
                 sqlBuilder.append(" and  create_uid = "+pageQuery.getCreateUid()+" ");
             }
+            if(StringUtils.isNoneBlank(pageQuery.getCreateUid())){
+                sqlBuilder.append(" and  create_uid = "+pageQuery.getCreateUid()+" ");
+            }
             return sqlBuilder.toString();
         }
     }

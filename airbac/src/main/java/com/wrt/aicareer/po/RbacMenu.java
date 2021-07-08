@@ -25,7 +25,7 @@ public class RbacMenu extends BasePO {
     private String menuUrl;
     private String menuIndex;
     /** 0:激活状态 1:无效状态**/
-    private String status;
+    private Integer status;
     private String icon;
     private String pid;
     private Long createUid;
