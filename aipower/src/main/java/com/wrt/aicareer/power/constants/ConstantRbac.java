@@ -7,4 +7,7 @@ package com.wrt.aicareer.power.constants;
 public class ConstantRbac {
 
     public static final String SESSION_USER =  "SESSION_USER";
+
+    public static final Integer STATUS_ACTIVE =  0;
+    public static final Integer STATUS_UNUSE =  1;
 }

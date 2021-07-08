@@ -1,6 +1,7 @@
 package com.wrt.aicareer.po;
 
 import com.wrt.aicareer.power.bean.BasePO;
+import com.wrt.aicareer.power.constants.ConstantRbac;
 import com.wrt.aicareer.web.holder.RequestHolder;
 import lombok.Data;
 
@@ -23,7 +24,7 @@ public class RbacRole  extends BasePO {
     private String roleName;
 
     /** 0:激活状态 1:无效状态**/
-    private String status;
+    private Integer status;
     private Long createUid;
     private Long createTime;
     private Long lastUpdateTime;
@@ -40,5 +41,6 @@ public class RbacRole  extends BasePO {
         this.setCreateUid(RequestHolder.getUser().getUserId());
         this.setLastUpdateTime(System.currentTimeMillis());
         this.setLastUpdateIp(RequestHolder.getRemoteIp());
+        this.setStatus(ConstantRbac.STATUS_ACTIVE);
     }
 }
