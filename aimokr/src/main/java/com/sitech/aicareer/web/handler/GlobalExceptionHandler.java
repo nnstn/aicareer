@@ -1,6 +1,6 @@
 package com.sitech.aicareer.web.handler;
 
-import com.sitech.aicareer.bean.JsonData;
+import com.wrt.aicareer.power.bean.JsonData;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

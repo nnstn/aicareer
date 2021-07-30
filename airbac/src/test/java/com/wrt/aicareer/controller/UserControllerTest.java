@@ -37,7 +37,7 @@ public class UserControllerTest {
         userController.register(rbacUser);
     }
     @Test
-    public void login() {
+    public void login() throws Exception {
         RbacUser rbacUser = new RbacUser();
         rbacUser.setUsername("wangjn_bj");
         rbacUser.setEmail("wangjn1130@163.com");

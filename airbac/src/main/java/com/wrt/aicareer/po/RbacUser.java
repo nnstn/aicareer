@@ -31,7 +31,7 @@ public class RbacUser  extends BasePO {
     private String rbacUserIcon;
     private String deptId;
     private String ssoCode;
-    private String status; //状态，0:正常,1：冻结状态，2：删除，3：待审批，4：未通过
+    private Integer status; //状态，0:正常,1：冻结状态，2：删除，3：待审批，4：未通过
     private String lastRoleId;
     private Long lastUpdateTime;
     private String lastUpdateIp;

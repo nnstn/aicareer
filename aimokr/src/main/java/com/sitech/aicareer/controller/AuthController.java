@@ -1,6 +1,6 @@
 package com.sitech.aicareer.controller;
 
-import com.sitech.aicareer.bean.JsonData;
+import com.wrt.aicareer.power.bean.JsonData;
 import com.sitech.aicareer.pojo.User;
 import com.sitech.aicareer.service.AuthService;
 import lombok.extern.slf4j.Slf4j;

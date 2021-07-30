@@ -1,7 +1,7 @@
 package com.sitech.aicareer.web.filter;
 
 
-import com.sitech.aicareer.bean.JsonData;
+import com.wrt.aicareer.power.bean.JsonData;
 import com.sitech.aicareer.pojo.User;
 import com.sitech.aicareer.web.handler.JsonMapper;
 import com.sitech.aicareer.web.handler.RequestHolder;

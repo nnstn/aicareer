@@ -1,8 +1,8 @@
 package com.sitech.aicareer.controller;
 
-import com.sitech.aicareer.bean.JsonData;
 import com.sitech.aicareer.pojo.Article;
 import com.sitech.aicareer.service.ArticleService;
+import com.wrt.aicareer.power.bean.JsonData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

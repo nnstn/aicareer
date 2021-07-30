@@ -1,6 +1,6 @@
 package com.sitech.aicareer.mapper;
 
-import com.sitech.aicareer.bean.PageResult;
+import com.wrt.aicareer.power.bean.PageResult;
 import com.sitech.aicareer.bean.query.ProductGainPageQuery;
 import com.sitech.aicareer.pojo.ProductGain;
 import com.sitech.aicareer.service.ProductGainService;

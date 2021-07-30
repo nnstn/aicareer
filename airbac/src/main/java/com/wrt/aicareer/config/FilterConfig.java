@@ -1,5 +1,6 @@
 package com.wrt.aicareer.config;
 
+import com.alibaba.druid.support.http.WebStatFilter;
 import com.wrt.aicareer.web.filer.GlobalFilter;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
@@ -11,6 +12,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class FilterConfig {
+
     @Bean
     public FilterRegistrationBean<GlobalFilter> globalFilter(){
         FilterRegistrationBean<GlobalFilter> bean = new FilterRegistrationBean<>();
@@ -18,4 +20,5 @@ public class FilterConfig {
         bean.addUrlPatterns("/*");
         return bean;
     }
+
 }

@@ -26,11 +26,6 @@ a,a:hover{
     color:#404040;
 }
 
-/** 重置表单元素 **/
-legend{                               /* for ie6 */
-    color: #000;
-}
-
 fieldset, img                         /* 让链接里的 img 无边框 */
 {
     border: 0;
@@ -39,12 +34,6 @@ fieldset, img                         /* 让链接里的 img 无边框 */
 button, input, select, textarea{      /* 使得表单元素在 ie 下能继承字体大小 */
     font-size: 100%;
 }
-
-/** 重置表格元素 **/
-/*table{*/
-/*    border-collapse: collapse;*/
-/*    border-spacing: 0;*/
-/*}*/
 table {
     border-collapse: collapse;
 }
@@ -99,13 +88,11 @@ table{
 }
 table tr th {
     text-align:center;
-    border: 1px solid;
+    /*border: 1px solid;*/
 }
 table tr td {
-    valign: middle;
-    align: center;
     text-align:center;
-    /*border: 1px solid;*/
+    margin: auto;
 }
 
 /*开关样式 start*/
