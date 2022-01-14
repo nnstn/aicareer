@@ -44,3 +44,8 @@ picture:
 #模型算法平台能力目录redis是否加载
 modelAlgorithm:
   redis: true
+
+demo:
+  isopen: true
+  say-what: hello
+  to-who: shf
