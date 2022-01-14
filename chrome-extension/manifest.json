@@ -1,8 +1,9 @@
+//chrome 主要的配置文件
 {
 	// 清单文件的版本，这个必须写，而且必须是2
 	"manifest_version": 2,
 	// 插件的名称
-	"name": "能力平台部",
+	"name": "提高效率",
 	// 插件的版本
 	"version": "1.0.0",
 	// 插件描述
@@ -38,20 +39,32 @@
 	{
 		"default_icon": "img/icon.png",
 		// 图标悬停时的标题，可选
-		"default_title": "能力平台部Chrome插件",
+		"default_title": "提高效能",
 		"default_popup": "popup.html"
 	},
 	// 需要直接注入页面的JS
 	"content_scripts": 
 	[
+		//思特奇公司环境注入的js脚本
 		{
 			//"matches": ["http://*/*", "https://*/*"], //定义哪些页面会被注入脚本
 			//"exclude_matches": ["http://*/*", "https://*/*"],// 定义哪些页面不会被注入脚本
 			//"<all_urls>" //表示匹配所有地址
 			//"matches": ["<all_urls>"],
-			"matches": ["http://eip.teamshub.com/t/*"],
+			"matches": ["http://eip.teamshub.com/*"],
 			// 多个JS按顺序注入
-			"js": ["js/jquery.js", "js/content-script.js"],
+			"js": ["js/jquery.js", "js/content-script-sitech.js"],
+			// JS的注入可以随便一点，但是CSS的注意就要千万小心了，因为一不小心就可能影响全局样式
+			//"css": ["css/custom.css"], // 注入对应样式表
+			// 代码注入的时间，可选值： "document_start", "document_end", or "document_idle"，最后一个表示页面空闲时，默认document_idle
+			"run_at": "document_end"
+		},
+		//所有页面注入的js问题件
+		{
+			"matches": ["<all_urls>"],
+			"exclude_matches": ["http://eip.teamshub.com/t/*"],
+			// 多个JS按顺序注入
+			"js": ["js/jquery.js", "js/content-script-common.js"],
 			// JS的注入可以随便一点，但是CSS的注意就要千万小心了，因为一不小心就可能影响全局样式
 			//"css": ["css/custom.css"], // 注入对应样式表
 			// 代码注入的时间，可选值： "document_start", "document_end", or "document_idle"，最后一个表示页面空闲时，默认document_idle
