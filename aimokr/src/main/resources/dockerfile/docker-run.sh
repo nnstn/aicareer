@@ -1,3 +1,8 @@
+mvn clean package docker:build
+docker run  --restart=always -d -it -p 8090:8090 --name=aimokr  aicareer/aimokr:1.0-SNAPSHOT
+docker run  -d -it -p 8090:8090 --name=aimokr  aicareer/aimokr
+
+
 #备注：docker 启动指定环境变量参数
 docker run -d -it -p 9012:9012 -e "EUREKA_IP=192.168.162.128" -e "EUREKA_PORT=9011" -e "KAFKA_IP=172.18.199.14" -e "KAFKA_PORT=9092" -e "RECOGNITION_IP=172.18.199.14" -e "RECOGNITION_PORT=10102" --name=ciip-platform-test registry2/ciip-platform:1.5.0-SNAPSHOT
 

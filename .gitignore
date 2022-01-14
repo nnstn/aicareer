@@ -1,7 +1,11 @@
 .DS_Store
-node_modules
+
+# idea
+*.iml
 /dist
 /target
+
+# nodejs
 example.html
 favicon.ico
 # local env files

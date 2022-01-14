@@ -1,7 +1,7 @@
 package com.sitech.aicareer.controller;
 
-import com.sitech.aicareer.bean.JsonData;
-import com.sitech.aicareer.bean.PageResult;
+import com.wrt.aicareer.power.bean.JsonData;
+import com.wrt.aicareer.power.bean.PageResult;
 import com.sitech.aicareer.bean.query.TaskPageQuery;
 import com.sitech.aicareer.pojo.Task;
 import com.sitech.aicareer.service.TaskService;

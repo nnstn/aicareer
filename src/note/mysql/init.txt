@@ -1,25 +1,8 @@
-
-DROP TABLE IF EXISTS `user`;
-create table `user` (
-  `id` bigint(20) not null auto_increment comment '用户ID',
-  `leader` bigint(20) not null comment '直属领导',
-  `user_code` varchar(50) not null unique comment '用户编码',
-  `user_name` varchar(50) not null comment '用户名称',
-  `password`  varchar(50) not null comment '用户密码',
-  `email`     varchar(50) not null comment '用户邮箱',
-  `phone`     varchar(50) not null comment '用户电话',
-  `salt`     varchar(50) not null comment  '盐',
-  `create_time` datetime default null comment '创建时间',
-  `last_update_time` datetime default null comment '最后更新时间',
-  `operate_ip`     varchar(50) not null comment '创建用户IP',
-  primary key (`id`)
-) engine=innodb auto_increment=1 default charset=utf8 comment '用户表';
-
-DROP TABLE IF EXISTS `task`;
+drop table if exists `task`;
 create table `task` (
-  `id` bigint(20) not null auto_increment comment '任务ID',
-  `dispatcher` varchar(50) not null  comment   '派发任务用户ID',
-  `task_id`     varchar(50)  not null comment   '执行任务用户ID',
+  `id` bigint(20) not null auto_increment comment '任务id',
+  `dispatcher` varchar(50) not null  comment   '派发任务用户id',
+  `task_id`     varchar(50)  not null comment   '执行任务用户id',
   `task_name`  varchar(50) not null  comment    '任务名称',
   `start_date` datetime not null comment '开始日期',
   `end_date`   datetime not null comment '结束日期',
@@ -30,37 +13,37 @@ create table `task` (
 
   `create_time` datetime default null comment '创建时间',
   `last_update_time` datetime default null comment '最后更新时间',
-  `operate_ip`     varchar(50) not null comment '创建用户IP',
+  `operate_ip`     varchar(50) not null comment '创建用户ip',
   primary key (`id`)
 ) engine=innodb auto_increment=1 default charset=utf8  comment '任务表';
 
-DROP TABLE IF EXISTS `product`;
+drop table if exists `product`;
 create table `product` (
-  `id` bigint(20) not null auto_increment comment '产品ID',
+  `id` bigint(20) not null auto_increment comment '产品id',
   `product_name`  varchar(200) not null  comment    '任务名称',
   `product_url`   varchar(200)  comment '产品地址',
   `create_time` datetime default null comment '创建时间',
   `last_update_time` datetime default null comment '最后更新时间',
-  `operate_ip`     varchar(50) not null comment '创建用户IP',
+  `operate_ip`     varchar(50) not null comment '创建用户ip',
   primary key (`id`)
 ) engine=innodb auto_increment=1 default charset=utf8  comment '产品信息表';
 
-DROP TABLE IF EXISTS `product_gain` ;
+drop table if exists `product_gain` ;
 create table `product_gain` (
-  `id` bigint(20) not null auto_increment comment '交付ID',
-  `product_id` bigint(20) not null    comment '产品ID',
+  `id` bigint(20) not null auto_increment comment '交付id',
+  `product_id` bigint(20) not null    comment '产品id',
   `gain_name`  varchar(50) not null  comment    '任务名称',
   `gain_url`   varchar(200)  comment '产品地址',
   `create_time` datetime default null comment '创建时间',
   `last_update_time` datetime default null comment '最后更新时间',
-  `operate_ip`     varchar(50) not null comment '创建用户IP',
+  `operate_ip`     varchar(50) not null comment '创建用户ip',
   primary key (`id`)
 ) engine=innodb auto_increment=1 default charset=utf8 comment '产品交付表';
 
 
-DROP TABLE IF EXISTS `article` ;
+drop table if exists `article` ;
 create table `article` (
-  `article_id` bigint(20) not null auto_increment comment '帖子ID',
+  `article_id` bigint(20) not null auto_increment comment '帖子id',
   `author`  varchar(50) not null  comment    '帖子作者',
   `article_title`   varchar(200)  comment '帖子标题',
   `article_url`   varchar(200)  comment '帖子地址',
@@ -72,18 +55,99 @@ create table `article` (
   `update_date` datetime default null comment '最后更新日期',
   `create_time` datetime default null comment '采集时间',
   `last_update_time` datetime default null comment '最后更新时间',
-  `operate_ip`     varchar(50) not null comment '采集用户IP',
+  `operate_ip`     varchar(50) not null comment '采集用户ip',
   primary key (`article_id`)
 ) engine=innodb auto_increment=1 default charset=utf8 comment '帖子交付列表';
 
-DROP TABLE IF EXISTS `attachment` ;
+drop table if exists `attachment` ;
 create table `attachment` (
-  `attach_id` bigint(20) not null auto_increment comment '附件ID',
-  `article_id` bigint(20) not null comment '帖子ID',
+  `attach_id` bigint(20) not null auto_increment comment '附件id',
+  `article_id` bigint(20) not null comment '帖子id',
   `attach_name`  varchar(200)   comment '附件名称',
   `attach_url`   varchar(200)  comment '附件地址',
   `create_time` datetime default null comment '采集时间',
   `last_update_time` datetime default null comment '最后更新时间',
-  `operate_ip`     varchar(50) not null comment '采集用户IP',
+  `operate_ip`     varchar(50) not null comment '采集用户ip',
   primary key (`attach_id`)
 ) engine=innodb auto_increment=1 default charset=utf8 comment '帖子附件列表';
+
+
+drop table if exists `month_scheduler` ;
+create table `month_scheduler` (
+  `scheduler_id` bigint(20) not null auto_increment comment '月度计划id',
+  `scheduler_name`  varchar(200)   comment '月度计划名称',
+  `status` int(2) not null comment '完成状态:0-完成 1-未完成 2-作废',
+  `create_time` datetime default null comment '创建时间',
+  `last_update_time` datetime default null comment '最后更新时间',
+  `last_update_ip`     varchar(50) not null comment '最后更新用户ip',
+  `last_update_uid`    varchar(50) not null comment '最后更新用户id',
+  primary key (`scheduler_id`)
+) engine=innodb auto_increment=1 default charset=utf8 comment '每月例行时间表';
+
+drop table if exists `rbac_user` ;
+create table `rbac_user` (
+  `user_id` bigint(20) not null auto_increment comment '用户id',
+  `username` varchar(20) not null default '' comment '用户名称',
+  `password` varchar(200) not null default '' comment '加密后的密码',
+  `public_key` varchar(20) comment '公钥 MD5盐值 RSA公钥',
+  `telephone` varchar(13) default '' comment '手机号',
+  `email` varchar(255) default '' comment '电子邮箱',
+  `rbac_user_icon` varchar(255) default null comment '人脸头像',
+  `dept_id` int(11) default '0' comment '用户所在部门的id(保留字段)',
+  `sso_code` varchar(255) default null comment '集成单点登录系统映射ID',
+  `status` int(2) default '3' comment '状态，0:正常,1：冻结状态，2：删除，3：待审批，4：未通过',
+  `last_role_id` int(11) default null comment '默认使用上次登录的角色id',
+  `last_update_time`  bigint(20) not null comment '最后更新时间',
+  `last_update_ip`   varchar(50) not null comment '最后更新用户ip',
+  `last_update_uid`  varchar(50) default null comment '最后更新用户id',
+  `last_login_ip`  varchar(50) default null comment '最后登录IP',
+  `last_login_time`  bigint(20) default null comment '最后登录时间',
+  `remark` varchar(200) default '' comment '备注',
+  primary key (`user_id`) using btree
+) engine=innodb auto_increment=0 default charset=utf8 comment='用户表';
+
+drop table if exists `rbac_user_role` ;
+create table `rbac_user_role` (
+  `user_id` bigint(20) not null comment '用户id',
+  `role_id` bigint(20) not null comment '角色id'
+) engine=innodb default charset=utf8 comment='用户角色关系表';
+
+drop table if exists `rbac_role` ;
+create table `rbac_role` (
+  `role_id` bigint(20) not null auto_increment comment '角色id',
+  `role_name` varchar(255) not null comment '角色名',
+  `status` int(1) not null default '0' comment '0:激活状态 1:无效状态',
+  `remark` varchar(255) default null comment '备注',
+  `create_uid` bigint(20) default null comment '创建者',
+  `create_time` bigint(20) default null comment '创建日期',
+  `last_update_time` bigint(20) default null comment '最后更新时间',
+  `last_update_ip`     varchar(50) not null comment '最后更新用户ip',
+  `last_update_uid`    varchar(50) not null comment '最后更新用户id',
+  primary key (`role_id`) using btree,
+  key `inx_name` (`role_name`) using btree
+) engine=innodb auto_increment=0 default charset=utf8 comment='角色表';
+
+CREATE TABLE `rbac_role_menu` (
+  `menu_id` bigint(20) NOT NULL,
+  `role_id` bigint(20) NOT NULL,
+  KEY `role_id` (`role_id`) USING BTREE,
+  KEY `menu_id` (`menu_id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 comment='角色菜单关系表';
+
+drop table if exists `rbac_menu` ;
+create table `rbac_menu` (
+  `menu_id` bigint(20) not null auto_increment comment '菜单id',
+  `menu_name` varchar(255) default null comment '菜单名',
+  `menu_url` varchar(255) default null comment 'url地址',
+  `menu_index` int(10) not null auto_increment comment '菜单排序',
+  `status` int(1) not null default '0' comment '0:激活状态 1:无效状态',
+  `icon` varchar(255) default null comment '图标',
+  `pid` bigint(20) default null comment '上级菜单',
+  `remark` varchar(255) default null comment '备注',
+  `create_uid` bigint(20) default null comment '创建者',
+  `create_time` bigint(20) default null comment '创建日期',
+  `last_update_time` bigint(20) default null comment '最后更新时间',
+  `last_update_ip`     varchar(50) not null comment '最后更新用户ip',
+  `last_update_uid`    varchar(50) not null comment '最后更新用户id',
+  primary key (`menu_id`) using btree
+) engine=innodb auto_increment=0 default charset=utf8 comment='菜单表';

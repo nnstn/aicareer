@@ -1,6 +1,6 @@
 package com.sitech.aicareer.bean.query;
 
-import com.sitech.aicareer.bean.PageQuery;
+import com.wrt.aicareer.power.bean.PageQuery;
 import lombok.Getter;
 import lombok.Setter;
 

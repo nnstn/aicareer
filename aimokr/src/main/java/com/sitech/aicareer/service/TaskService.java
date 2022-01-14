@@ -2,7 +2,7 @@ package com.sitech.aicareer.service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.sitech.aicareer.bean.PageResult;
+import com.wrt.aicareer.power.bean.PageResult;
 import com.sitech.aicareer.bean.query.TaskPageQuery;
 import com.sitech.aicareer.mapper.TaskMapper;
 import com.sitech.aicareer.pojo.Task;

@@ -17,12 +17,15 @@ spring:
 druid:
   loginPassword: 123456
   loginUsername: admin
+server:
+  tomcat:
+    max-http-post-size: -1 #请求传入参数大小限制
+    basedir: /aidata/aicareer/applications/aicareer/tmp
 
 #mybatis配置
 mybatis:
   configuration:
     map-underscore-to-camel-case: true
-
 
 pagehelper:
   helper-dialect: mysql

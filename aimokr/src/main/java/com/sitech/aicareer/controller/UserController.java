@@ -1,10 +1,10 @@
 package com.sitech.aicareer.controller;
 
-import com.sitech.aicareer.bean.JsonData;
-import com.sitech.aicareer.bean.PageQuery;
-import com.sitech.aicareer.bean.PageResult;
 import com.sitech.aicareer.pojo.User;
 import com.sitech.aicareer.service.UserService;
+import com.wrt.aicareer.power.bean.JsonData;
+import com.wrt.aicareer.power.bean.PageQuery;
+import com.wrt.aicareer.power.bean.PageResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

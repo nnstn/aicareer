@@ -2,8 +2,7 @@
 node_modules
 /dist
 /target
-example.html
-favicon.ico
+package-lock.json
 # local env files
 .env.local
 .env.*.local

@@ -1,7 +1,7 @@
 package com.sitech.aicareer.service;
 
 import com.sitech.aicareer.pojo.User;
-import com.sitech.aicareer.utils.PasswordUtil;
+import com.wrt.aicareer.power.PasswordUtil;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
