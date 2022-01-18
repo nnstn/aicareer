@@ -21,11 +21,12 @@ public class LoginFilter implements Filter {
     }
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        HttpServletRequest req = (HttpServletRequest) servletRequest;
+        HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse resp = (HttpServletResponse) servletResponse;
 
-        User sysUser = (User) req.getSession().getAttribute("user");
+        User sysUser = (User) request.getSession().getAttribute("user");
         if (sysUser == null) {
+            String token  = request.getHeader("token");
             writeText(JsonMapper.obj2String(JsonData.fail("用户未登录")), resp);
             return;
         }

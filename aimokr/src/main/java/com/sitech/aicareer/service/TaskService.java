@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -38,11 +39,6 @@ public class TaskService {
 
     }
 
-    public List<Task> getTaskSchedule(TaskPageQuery pageQuery) {
-        List<Task> tasks = taskMapper.getAllTask(pageQuery);
-        return tasks;
-    }
-
     public int insertTask(Task task) {
         User user = RequestHolder.getCurrentUser();
         HttpServletRequest request = RequestHolder.getCurrentRequest();
@@ -53,13 +49,35 @@ public class TaskService {
         if (null == task.getTasker()) {
             task.setTasker(user.getUserCode());
         }
-        if (0 == task.getState()) {
+        if (null == task.getState()) {
             /** 任务初始状态为 **/
             task.setState(1);
         }
-
-        task.setCreateTime(new Date());
-        task.setLastUpdateTime(new Date());
+        if (null == task.getTaskType()) {
+            /** 默认为其他任务 **/
+            task.setTaskType(8);
+        }
+        if (null == task.getNoticeType()) {
+            /** 默认平台提醒 **/
+            task.setNoticeType(4);
+        }
+        if (null == task.getTopping()) {
+            /** 默认置顶 **/
+            task.setTopping(Boolean.TRUE);
+        }
+        if (null == task.getStartDate()) {
+            /** 默认置顶 **/
+            task.setStartDate(Calendar.getInstance().getTime());
+        }
+        if (null == task.getEndDate()) {
+            /** 默认置顶 **/
+            Calendar cal = Calendar.getInstance();
+            cal.setTime(task.getStartDate());
+            cal.add(Calendar.DAY_OF_MONTH,3);
+            task.setEndDate(cal.getTime());
+        }
+        task.setCreateTime(Calendar.getInstance().getTime());
+        task.setLastUpdateTime(Calendar.getInstance().getTime());
         task.setOperateIp(request.getRemoteAddr());
         return taskMapper.insert(task);
     }

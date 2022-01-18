@@ -2,6 +2,7 @@ package com.sitech.aicareer.config;
 
 import com.sitech.aicareer.web.filter.CommonFilter;
 import com.sitech.aicareer.web.filter.LoginFilter;
+import org.apache.catalina.filters.CorsFilter;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,6 +16,7 @@ public class WebConfig {
         bean.setFilter(new LoginFilter());
         bean.addUrlPatterns("/task/*");
         bean.addUrlPatterns("/camera/*");
+        bean.setOrder(2);
         return bean;
     }
     @Bean
@@ -22,6 +24,7 @@ public class WebConfig {
         FilterRegistrationBean<CommonFilter> bean = new FilterRegistrationBean<CommonFilter>();
         bean.setFilter(new CommonFilter());
         bean.addUrlPatterns("/*");
+        bean.setOrder(1);
         return bean;
     }
 }

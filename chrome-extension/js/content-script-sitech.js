@@ -59,27 +59,3 @@ function sendArticle() {
             alert(xhrObj);
         });
 }
-
-
-function asyncRequest(url,param,successFunc,errorFunc) {
-    $.ajax({
-        type : 'POST',
-        url : aicareerUrl,
-        async : true,
-        data: param,
-        dataType : 'json',
-        contentType: "application/json",
-        traditional:true,
-        timeout:120000,
-        success : function(result,status,resp) {
-            successFunc(result,status,resp);
-        },
-        complete:function(){
-
-        },
-        error: function(xhrObj, txtStatus, errorThrown) {
-            serviceError(xhrObj, txtStatus, errorThrown);
-        }
-    });
-    
-}

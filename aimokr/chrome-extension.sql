@@ -103,7 +103,7 @@ CREATE TABLE `task`  (
   `state` int(2) NULL DEFAULT NULL COMMENT '任务状态 1:新增 2 处理中 3 完成',
   `create_time` datetime(0) NULL DEFAULT NULL COMMENT '创建时间',
   `last_update_time` datetime(0) NULL DEFAULT NULL COMMENT '最后更新时间',
-  `opeation_ip` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '创建用户IP',
+  `operate_ip` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '创建用户IP',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
