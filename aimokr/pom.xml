@@ -56,11 +56,6 @@
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.demo</groupId>
-            <artifactId>demo-spring-boot-starter</artifactId>
-            <version>0.0.1-RELEASE</version>
-        </dependency>
     </dependencies>
     <build>
         <finalName>aimokr</finalName>

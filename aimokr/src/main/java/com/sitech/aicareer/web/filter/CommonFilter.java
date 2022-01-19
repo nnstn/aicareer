@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -31,13 +32,34 @@ public class CommonFilter  implements Filter {
     }
 
     @Override
-    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+    public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws IOException, ServletException {
+        HttpServletRequest request = (HttpServletRequest) req;
+        HttpServletResponse response = (HttpServletResponse) resp;
+
         accessCounter.incrementAndGet();
         concurrencyCounter.incrementAndGet();
         log.info("--------------------------------------");
         log.info("系统启动时间：{},当前系统访问次数:{},当前处理并发数:{}",startDate,accessCounter,concurrencyCounter);
         log.info("--------------------------------------");
-        RequestHolder.add((HttpServletRequest) request);
+        RequestHolder.add(request);
+
+        // 响应标头指定 指定可以访问资源的URI路径
+        response.setHeader("Access-Control-Allow-Origin", request.getHeader("Origin"));
+
+        //响应标头指定响应访问所述资源到时允许的一种或多种方法
+        response.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT, OPTIONS, DELETE");
+
+        //设置 缓存可以生存的最大秒数
+        response.setHeader("Access-Control-Max-Age", "3600");
+
+        //设置  受支持请求标头
+        response.setHeader("Access-Control-Allow-Headers", "x-requested-with");
+
+        // 指示的请求的响应是否可以暴露于该页面。当true值返回时它可以被暴露
+        response.setHeader("Access-Control-Allow-Credentials","true");
+
+
+
         chain.doFilter(request,response);
         concurrencyCounter.decrementAndGet();
         RequestHolder.remove();

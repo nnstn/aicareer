@@ -1,3 +1,6 @@
+// let baseurl = "https://aicp.teamshub.com/aicareer/api";
+let baseurl = "http://192.168.15.60/aicareer/api";
+
 $(document).ready(function() {
     //默认active
     $(".tab_content").hide(); //隐藏全部的tab菜单内容
@@ -19,5 +22,55 @@ $(document).ready(function() {
        // e.stopPropagation();
     })
 
+    todolist();
+
+    $("#fresh").click(function () {
+        todolist();
+    });
+
+    // bind event for connectbtn
+    if( $("#login").length ){
+        console.log(window.location.href);
+        $("#login").click(function () {
+            $("#username").val($("#username").val().trim()) ;
+            $("#password").val($("#password").val().trim()) ;
+            let param = {"userCode": $("#username").val(), "password": $("#password").val()};
+            asyncRequest(baseurl+"/auth/login",JSON.stringify(param),
+                function (result) {
+                    console.log("登录成功");
+                    console.log(result);
+                    saveChanges("username");
+                    saveChanges("password");
+                    saveChanges("token");
+                }
+                ,function(xhrObj, txtStatus, errorThrown){
+                    console.log(xhrObj);
+                });
+
+
+        });
+    }
+    init();
 
 });
+
+function todolist() {
+    let param = {};
+    asyncRequest(baseurl+"/task/getall",JSON.stringify(param)
+        ,function (result) {
+            $("#tab1 table tbody").html();
+        }
+        ,function(xhrObj, txtStatus, errorThrown){
+            console.log(xhrObj);
+        });
+
+
+}
+function init(){
+    if( localStorage.getItem("username") != null  ){
+        setlocalStorageToValue("username");
+        setlocalStorageToValue("password");
+        setlocalStorageToValue("token");
+    }
+}
+

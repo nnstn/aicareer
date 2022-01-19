@@ -21,11 +21,6 @@ public class TaskController {
         PageResult<Task> pageResult = taskService.getAllTask(pageQuery);
         return JsonData.success(pageResult);
     }
-    @PostMapping("schedule")
-    public JsonData getSchedule(@RequestBody TaskPageQuery pageQuery) {
-        List<Task> schedules = taskService.getTaskSchedule(pageQuery);
-        return JsonData.success(schedules);
-    }
 
     @PostMapping("insert")
     public JsonData insertTask(@RequestBody Task task) {
