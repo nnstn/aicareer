@@ -58,9 +58,12 @@ public class CommonFilter  implements Filter {
         // 指示的请求的响应是否可以暴露于该页面。当true值返回时它可以被暴露
         response.setHeader("Access-Control-Allow-Credentials","true");
 
-
-
-        chain.doFilter(request,response);
+        if (request.getMethod().equals("OPTIONS")){
+            log.info("》》》浏览器 》》预验请求");
+            response.setStatus(HttpServletResponse.SC_OK);
+        }else{
+            chain.doFilter(request, response);
+        }
         concurrencyCounter.decrementAndGet();
         RequestHolder.remove();
     }

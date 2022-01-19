@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+    <meta charset="utf-8">
+    <title>webvpn</title>
+    <link rel="stylesheet" href="main.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="bootstrap-switch.min.css" type="text/css" media="screen" />
+    <script src="jquery.js"></script>
+    <script src="bootstrap-switch.min.js"></script>
+</head>
+<body>
+<div class="hidden" id="pac">
+</div>
+<div id="login" class="ac">
+    <form class="form-inline">
+        <div style="width:95%;height:200px;overflow: scroll;margin : 10px" id="serverdiv">
+            <table name="serverlist" id="serverlist" class="table table-bordered table-striped" width="90%">
+                <tr><td id="reloadhint">请点击更新列表按钮</td></tr>
+            </table>
+        </div>
+
+        <div style="text-align:center" class="control-group" id="logdiv">
+            <input type="text" id="serverdomain" name="serverdomain" class="hide" />
+            <div class="controls">
+                <input type="text"  name="username" id="username" style="width:100px;" placeholder="username">
+                <input type="password" name="password" id="password" style="width:100px;" placeholder="Password">
+            </div>
+        </div>
+        <div style="text-align:center;margin-top:10px">
+            <button type="button" class="btn   on" id="connectbtn"  style="padding-left:8px;padding-right:8px" ><i class="icon-play"></i>连接</button>
+            <button type="button" class="btn   disabled" style="margin-left:-6px;padding-left:8px;padding-right:8px" id="disconnect" disabled="disabled"><i class="icon-stop"></i>断开</button>
+
+            <button type="button" class="btn" id="reloadbt"  ><i class="icon-refresh"></i></button>
+            <a href="settings.html" target="_blank" id="setbt" class="btn btn-info" title="settings" style="padding-left:8px;padding-right:8px"><i class="icon-wrench"></i>设置</a>
+        </div>
+        <div style="text-align:left;margin:10px 10px 0 0 " class="alert alert-info hide" id="info">system info</div>
+    </form>
+    <hr />
+
+    全局：<input type="checkbox" id="check-global" name="check-global" value="0" checked="false" />
+    <hr />
+
+    <form class="form-inline" id="showcurrentdomainstatusform"><div id="consolediv"  class="controls" style="text-align:left">
+        当前浏览网页域名白名单快捷管理:<input  type='text' style='width:190px'  id='currentBrowsingDomain'  class='input'  />
+        <button  id='sslremovebt' style="display:none" class='btn' type='button'  title='移除SSL'><i class='icon-remove'></i></button>
+        <button  id='ssladdbt'  class='btn' type='button'  title='添加到SSL'><i class='icon-plus'></i></button>
+    </div>
+    </form>
+
+    <div  id="toomanypasserror" style="display:none;background:#000;color:#fff">你当前密码错误，系统已经停止登录，请您到网站查看密码，做出修改重新登录;<br />
+        Too many error logins, please change your password, and relogin here again.
+    </div>
+</div>
+<div style="color:#444;text-indent:5px;background:#ddd;padding:4px;" id="cinfo">    </div>
+<script src="md5.js"></script>
+<script src="myscript.js"></script>
+</body>
+</html>
