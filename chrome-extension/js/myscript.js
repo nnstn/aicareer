@@ -1,4 +1,5 @@
-let baseurl = "https://aicp.teamshub.com/aicareer/api";
+// let baseurl = "https://aicp.teamshub.com/aicareer/api";
+let baseurl = "http://192.168.15.60/aicareer/api";
 
 $(document).ready(function() {
     //默认active

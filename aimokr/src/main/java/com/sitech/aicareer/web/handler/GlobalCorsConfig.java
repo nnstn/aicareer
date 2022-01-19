@@ -1,8 +1,6 @@
 package com.sitech.aicareer.web.handler;
 
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
@@ -11,9 +9,9 @@ import org.springframework.web.filter.CorsFilter;
 /**
  * 处理跨域请求的过滤器
  */
-@Configuration
+//@Configuration
 public class GlobalCorsConfig {
-    @Bean
+    //@Bean  // 因为无法处理 chrome-extension
     public FilterRegistrationBean corsFilter() {
         //1.添加CORS配置信息
         CorsConfiguration config = new CorsConfiguration();
